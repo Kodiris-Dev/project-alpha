@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #0a0a0a;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,17 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.login-button {
+  position: absolute;
+  right: 0px;
+  text-align: center;
+  background-color: red;
+  width: 110px;
+}
+
+.login-button:hover {
+  background-color: darkred;
+  cursor: pointer;
 }
