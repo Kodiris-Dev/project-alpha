@@ -6,7 +6,7 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
 
-import HomeGrid from '../components/HomeGrid'
+import CreateGrid from './CreateViews/CreateGrid'
 
 
 
@@ -36,23 +36,23 @@ const useStyles = makeStyles((theme) => ({
       },
   }));
 
-function Home() {
+function Create() {
     const classes = useStyles();
     return (
         <div className={classes.root}>
             <Grid container spacing={0}>
                 <Hidden only={['sm', 'xs']}>
-                    <Grid item xs={0} sm={1} md={2} lg={2}>
+                    <Grid item xs={0} sm={1} md={2}>
                         <Paper className={classes.sides}>xs=12 sm=2</Paper>
                     </Grid>
                 </Hidden>
-                <Grid item xs={12} sm={12} md={8} lg={8}>
+                <Grid item xs={12} sm={12} md={8}>
                 <Paper className={classes.paper}>
-                    <HomeGrid />
+                    <CreateGrid />
                 </Paper>
                 </Grid>
                 <Hidden only={['sm', 'xs']}>
-                    <Grid item xs={0} sm={1} md={2} lg={2}>
+                    <Grid item xs={0} sm={1} md={2}>
                         <Paper className={classes.sides}>xs=12 sm=2</Paper>
                     </Grid>
                 </Hidden>
@@ -61,4 +61,4 @@ function Home() {
     )
 }
 
-export default Home
+export default Create

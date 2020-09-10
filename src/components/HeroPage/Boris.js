@@ -35,15 +35,15 @@ export default function Boris() {
   return (
     <div className={classes.root}>
       <Grid container spacing={0}>
-        <Grid item xs={12} sm={1} md={2} lg={3}>
+        <Grid item xs={12} sm={1} md={2}>
           <Paper className={classes.sides}>xs=12 sm=2</Paper>
         </Grid>
-        <Grid item xs={12} sm={10} md={8} lg={6}>
+        <Grid item xs={12} sm={10} md={8}>
           <Paper className={classes.paper}>
               <div className="banner"></div>
           </Paper>
         </Grid>
-        <Grid item xs={12} sm={1} md={2} lg={3}>
+        <Grid item xs={12} sm={1} md={2}>
           <Paper className={classes.sides}>xs=12 sm=2</Paper>
         </Grid>
       </Grid>
