@@ -7,6 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import Badge from '@material-ui/core/Badge';
 import MenuItem from '@material-ui/core/MenuItem';
+import MenuIcon from '@material-ui/icons/Menu';
 import Menu from '@material-ui/core/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import AccountCircle from '@material-ui/icons/AccountCircle';
@@ -14,6 +15,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 
+import { NavLink } from 'react-router-dom'
 import '../styles/Navbar.css';
 
 
@@ -82,6 +84,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function PrimarySearchAppBar() {
+
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -165,27 +168,21 @@ export default function PrimarySearchAppBar() {
 
   return (
     <div className={classes.grow}>
-      <AppBar position="absolute">
+      <AppBar position="static">
         <Toolbar>
-          <img className="fhn-nav-logo" src="https://uploads-ssl.webflow.com/5e4dd70c09d48fd33df2de2f/5f56e625192d6f7419894cd2_FHN_White.svg"/>
-          <Typography className={classes.title} variant="h6" noWrap>
-            <a href="/faultfire">
-              FAULTFIRE
-            </a>
+          <img className="fhn-nav-logo" src="https://uploads-ssl.webflow.com/5e4dd70c09d48fd33df2de2f/5f56e625192d6f7419894cd2_FHN_White.svg"></img>
+          <Typography noWrap>
+          <NavLink style={{borderLeft: "1px #7DBCC9 solid"}} to={"/faultfire/"} exact className="navlink" exact activeClassName="activeLink">FAULTFIRE</NavLink>
           </Typography>
-          <div className={classes.search}>
-            <div className={classes.searchIcon}>
-              <SearchIcon />
-            </div>
-            <InputBase
-              placeholder="Search…"
-              classes={{
-                root: classes.inputRoot,
-                input: classes.inputInput,
-              }}
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </div>
+          <Typography noWrap>
+          <NavLink to={"/faultfire/create"} exact className="navlink" exact activeClassName="activeLink">CREATE</NavLink>
+          </Typography>
+          <Typography noWrap>
+          <NavLink to={"/faultfire/browse"} exact className="navlink" exact activeClassName="activeLink">BROWSE</NavLink>
+          </Typography>
+          <Typography noWrap>
+          <NavLink to={"/faultfire/statcalculator"} exact className="navlink" exact activeClassName="activeLink">STAT CALCULATOR</NavLink>
+          </Typography>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
             <IconButton aria-label="show 4 new mails" color="inherit">
