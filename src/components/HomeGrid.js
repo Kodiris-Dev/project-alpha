@@ -3,6 +3,7 @@ import React from 'react'
 import { makeStyles, withTheme } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import HeroGrid from './HeroGrid';
 
 
 var faultBlue = '#7DBCC9';
@@ -39,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     textAlign: 'center',
     color: theme.palette.text.secondary,
-    height: '150px',
+    height: '100%',
     border: '1px solid',
     borderColor: faultBlue,
     backgroundColor: 'transparent',
@@ -62,7 +63,9 @@ export default function HomeGrid() {
           <Paper className={classes.middle}>Trending</Paper>
         </Grid>
         <Grid item xs={12}>
-          <Paper className={classes.heroes}>Heroes</Paper>
+          <Paper className={classes.heroes}>
+            <HeroGrid />
+          </Paper>
         </Grid>
       </Grid>
   );
