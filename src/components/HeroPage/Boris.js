@@ -27,9 +27,15 @@ const useStyles = makeStyles((theme) => ({
           backgroundColor: 'transparent',
           color: 'transparent',
         },
+      banner: {
+        width: '100%',
+      height: '28%',
+      backgroundSize: '100%',
+      backgroundPosition: 'center',
+      }
     }));
 
-export default function Boris() {
+export default function Boris(props) {
   const classes = useStyles();
 
   return (
@@ -40,7 +46,7 @@ export default function Boris() {
         </Grid>
         <Grid item xs={12} sm={10} md={8}>
           <Paper className={classes.paper}>
-              <div className="banner"></div>
+              <div></div>
           </Paper>
         </Grid>
         <Grid item xs={12} sm={1} md={2}>

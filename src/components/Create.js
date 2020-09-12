@@ -42,7 +42,7 @@ function Create() {
         <div className={classes.root}>
             <Grid container spacing={0}>
                 <Hidden only={['sm', 'xs']}>
-                    <Grid item xs={0} sm={1} md={1} lg={2}>
+                    <Grid item sm={1} md={1} lg={2}>
                         <Paper className={classes.sides}>xs=12 sm=2</Paper>
                     </Grid>
                 </Hidden>
@@ -52,7 +52,7 @@ function Create() {
                 </Paper>
                 </Grid>
                 <Hidden only={['sm', 'xs']}>
-                    <Grid item xs={0} sm={1} md={1} lg={2}>
+                    <Grid item sm={1} md={1} lg={2}>
                         <Paper className={classes.sides}>xs=12 sm=2</Paper>
                     </Grid>
                 </Hidden>
