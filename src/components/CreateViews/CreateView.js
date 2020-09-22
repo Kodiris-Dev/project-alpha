@@ -5,14 +5,22 @@ import {
 } from '@material-ui/core/styles';
 
 import TextField from '@material-ui/core/TextField';
-import FormatAlignLeftIcon from '@material-ui/icons/FormatAlignLeft';
-import FormatAlignCenterIcon from '@material-ui/icons/FormatAlignCenter';
-import FormatAlignRightIcon from '@material-ui/icons/FormatAlignRight';
-import FormatAlignJustifyIcon from '@material-ui/icons/FormatAlignJustify';
 import ToggleButton from '@material-ui/lab/ToggleButton';
 import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';
+import { Link } from 'react-router-dom'
+
+
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
+
+import '../Hero/HeroList'
+import printHeroName from './printHeroName'
+import HeroList from '../Hero/HeroList'
+import { heroName } from './printHeroName'
+import Button from '@material-ui/core/Button';
 
 var faultBlue = '#7DBCC9';
+console.log(heroName)
 
 const CssTextField = withStyles({
   root: {
@@ -39,7 +47,26 @@ const CssTextField = withStyles({
   },
 })(TextField);
 
+
 const useStyles = makeStyles((theme) => ({
+  square: {
+    //To make Square Shape
+    width: 115,
+    height: 115,
+    backgroundColor: '#14ff5f',
+    backgroundColor: 'black',
+    border: '1px solid',
+    borderColor: 'grey',
+},
+    gridRoot: {
+        flexGrow: 1,
+      },
+    paper: {
+        textAlign: 'center',
+        color: theme.palette.text.secondary,
+        height: '110px',
+        cursor: 'pointer',
+      },
   root: {
     display: 'flex',
     flexWrap: 'wrap',
@@ -61,14 +88,70 @@ const useStyles = makeStyles((theme) => ({
 },
 catGroup: {
     backgroundColor: faultBlue,
-    width: '98%',
-    margin: 8.
+    width: '100%',
+    margin: 8,
+    marginLeft: 0,
+
 },
 catName: {
     color: 'white',
-}
+},
+
+ selectHero: {
+     margin: 'auto',
+     marginLeft: 20,
+     fontSize: 18,
+ },
+ heroSelectLeft: {
+     width: '100%',
+     height: 390,
+     overflowY: 'auto',
+     overflowX: 'hidden',
+     border: '1px purple solid',
+ },
+ heroSelectRight: {
+    width: '100%',
+    border: '1px pink solid',
+    height: '100%',
+},
+heroSelectContainer: {
+    width: "50%"
+},
+img: {
+    width: '100%',
+    height: '110px',
+},
+heroLabel: {
+    position: 'absolute',
+    color: 'white',
+    backgroundColor: 'grey',
+    width: '100%',
+    bottom: 0,
+},
+heroWrapper: {
+    position: 'relative',
+},
+activeHero: {
+  border: '1px solid',
+  borderColor: faultBlue
+},
+
 }));
-export default function CreateView() {
+
+function HeroBlock(props) {
+
+    const classes = useStyles();
+    console.log(props)
+    return (
+        <div id="heroCard" className={classes.heroWrapper} onClick={ () => printHeroName(props.name, props.src)}>
+            <div className={classes.heroLabel}>{props.name}</div>
+            <img className={classes.img} src={props.src}></img>
+        </div>
+    )
+}
+
+
+function CreateView() {
   const classes = useStyles();
   const [alignment, setAlignment] = React.useState('left');
 
@@ -76,12 +159,25 @@ export default function CreateView() {
     setAlignment(newAlignment);
   };
 
+  const getHeroList = (heroListObj) => {
+      return (
+        <Grid item xs={4}>
+            <Paper className={classes.paper}>
+            <HeroBlock { ...heroListObj }/>
+            </Paper>
+        </Grid>
+      )
+  }
+
+
+
   return (
-      <div style={{border: '1px red solid'}}>
+      <div style={{height: '100%'}}>
             <div className={classes.fieldWrapper}>
                 <h2 className={classes.header}>TITLE</h2>
                 <form className={classes.root} noValidate autoComplete="off">
-                    <CssTextField
+                    <CssTextField style={{marginLeft: 0, marginRight: 0}}
+                        size="small"
                         required
                         className={classes.title}
                         label="Title Name"
@@ -109,6 +205,48 @@ export default function CreateView() {
                     </ToggleButton>
                 </ToggleButtonGroup>
             </div>
+            <div className={classes.fieldWrapper}>
+                <h2 className={classes.header}>SELECT HERO</h2>
+                <div style={{display: 'flex', border: 'solid 1px red'}}>
+                <div style={{border: '1px solid green', width: '50%', paddingRight: '20px'}}>
+                  <div style={{display: 'flex', marginTop: '8px'}}>
+                        <div id = "heroImage" className={classes.square}></div>
+                        <div className={classes.selectHero} id="heroName">{heroName}</div>
+                  </div>
+                
+                  <div className={classes.heroSelectLeft}>
+                        <div className={classes.gridRoot}>
+                            <Grid container spacing={3}>
+                                {HeroList.map(heroListObj => getHeroList(heroListObj))}
+                            </Grid>
+                  </div>
+                </div>
+                </div>
+                
+                <div className={classes.heroSelectContainer}>
+                    
+                    <div className={classes.heroSelectRight}>
+                        right
+                    </div>
+                </div>
+                </div>
+            <div className="footer" style={{border: '1px purple solid'}}>
+              <div style={{display: 'flex', justifyContent: 'space-between', marginTop: '30px'}}>
+                <div>
+
+                </div>
+                <div>
+                  <Link to="/create/details">
+                    <Button variant="contained" color="primary">
+                        NEXT
+                    </Button>
+                  </Link>
+                </div>   
+              </div>
+            </div>    
+            </div>
         </div>         
   );
 }
+
+export default CreateView

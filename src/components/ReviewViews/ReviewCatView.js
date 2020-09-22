@@ -18,6 +18,8 @@ const useStyles = makeStyles((theme) => ({
     height: '160px',
     backgroundColor: 'transparent',
     color: 'white',
+    borderRight: '1px dashed',
+    borderRightColor: faultBlue,
   },
   save: {
     padding: theme.spacing(2),
@@ -43,13 +45,11 @@ const useStyles = makeStyles((theme) => ({
       marginTop: 15,
       position: 'relative',
       bottom: -2,
-      width: 100,
-      textAlign: 'left'
   },
   square: {
     //To make Square Shape
     position: 'relative',
-    left: -20,
+    right: -22,
     width: 40,
     height: 40,
     backgroundColor: '#14ff5f',
@@ -62,6 +62,7 @@ const useStyles = makeStyles((theme) => ({
  squareActive: {
     //To make Square Shape
     position: 'relative',
+    right: -22,
     width: 40,
     height: 40,
     backgroundColor: '#14ff5f',
@@ -80,7 +81,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function CategoryView() {
+export default function ReviewCatView() {
   const classes = useStyles();
 
   return (
@@ -89,49 +90,46 @@ export default function CategoryView() {
         <Grid item xs={12}>
           <Paper className={classes.paper}>
                 <div className={classes.stepDiv}>
-                <div className={classes.square}>
+                    <p className={classes.step}>SETUP</p>
+                    <Link to="/create">
+                    <div className={classes.square}>
                         <div className={classes.stepValue}>1</div>
                     </div>
-                    <p className={classes.step}>SETUP</p>
-                    
+                    </Link>
                 </div>
             </Paper>
         </Grid>
         <Grid item xs={12}>
           <Paper className={classes.paper}>
             <div className={classes.stepDiv}>
-            <Link to="/create/details">
-                  <div className={classes.square}>
-                    <div className={classes.stepValue}>2</div>
-                  </div>
-                </Link> 
                 <p className={classes.step}>DETAILS</p>
+                <Link to="/create/details">
+                <div className={classes.square}>
+                    <div className={classes.stepValue}>2</div>
+                </div>
+                </Link>
             </div>
           </Paper>
         </Grid>
         <Grid item xs={12}>
           <Paper className={classes.paper}>
             <div className={classes.stepDiv}>
-            <Link to="/create/customize">
+                <p className={classes.step}>CUSTOMIZE</p>
+                <Link to="/create/customize">
                 <div className={classes.square}>
                     <div className={classes.stepValue}>3</div>
                 </div>
                 </Link>
-                <p className={classes.step}>CUSTOMIZE</p>
-
             </div>
           </Paper>
         </Grid>
         <Grid item xs={12}>
           <Paper className={classes.paper} style={{borderRight: "none"}}>
             <div className={classes.stepDiv}>
-            <Link to="/create/review">
-                <div className={classes.square}>
+                <p className={classes.step}>REVIEW</p>
+                <div className={classes.squareActive}>
                     <div className={classes.stepValue}>4</div>
                 </div>
-                </Link>
-                <p className={classes.step}>REVIEW</p>
-
             </div>
           </Paper>
         </Grid>

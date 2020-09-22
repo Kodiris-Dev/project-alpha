@@ -5,9 +5,8 @@ import Grid from '@material-ui/core/Grid';
 import TextField from '@material-ui/core/TextField';
 
 
-import CategoryView from './CategoryView'
-import CreateView from './CreateView';
-
+import CustomizeCatView from './CustomizeCatView'
+import CustomizeView from './CustomizeView'
 
 
 var faultBlue = '#7DBCC9';
@@ -47,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 
-export default function CreateGrid() {
+export default function CustomizeGrid() {
   const classes = useStyles();
 
   return (
@@ -55,12 +54,12 @@ export default function CreateGrid() {
       <Grid container spacing={0}>
         <Grid item xs={12} sm={8} md={9}>
           <Paper className={classes.paper}>
-            <CreateView/>
+            <CustomizeView />
             </Paper>
         </Grid>
         <Grid item xs={12} sm={4} md={3}>
           <Paper className={classes.paper}>
-            <CategoryView />
+            <CustomizeCatView />
           </Paper>
         </Grid>
       </Grid>

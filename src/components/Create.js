@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from '../logo.svg';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
@@ -7,6 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
 
 import CreateGrid from './CreateViews/CreateGrid'
+
 
 
 
