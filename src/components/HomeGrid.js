@@ -53,7 +53,7 @@ export default function HomeGrid() {
             <div className={classes.sectionHeading}>TRENDING GUIDES OF THE WEEK</div>
             <div className={classes.sectionContent}>
               <TrendingCardSection 
-              trending1="Trending Test"
+              trending1="Lentor sucks at Fault"
               trending2="DAVE HAS NO SITUATIONAL AWARENESS"
               trending3="The Best Guide You Will Ever Need!"
               />

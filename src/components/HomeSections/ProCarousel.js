@@ -2,6 +2,7 @@ import React from 'react'
 import DisplayCardBuild from '../Display/DisplayCardBuild'
 import StoredBuilds from '../StoredBuilds'
 import { Carousel } from '3d-react-carousal'
+import {MyCarousel} from '../MyCarousel'
 import { makeStyles } from '@material-ui/core/styles';
 
 var faultBlue = '#7DBCC9';
@@ -55,7 +56,7 @@ export default function ProCarousel(props) {
         <DisplayCardBuild build={trending1}/>  ,];
     return (
         <div className={classes.wrapper}>
-            <Carousel slides={slides} autoplay={false}/>
+            <MyCarousel slides={slides} autoplay={false}/>
 
         </div>
 

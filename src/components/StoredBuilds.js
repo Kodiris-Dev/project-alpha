@@ -18,6 +18,25 @@ const StoredBuilds = [
         }
     },
     {
+        title: 'Lentor sucks at Fault',
+        author: 'Lentor',
+        date: '22 SEP 2020',
+        hero: 'Dekker',
+        upvotes: 88738,
+        patch: '0.5.2',
+        role: 'Jungle',
+        displayBanner: 'https://uploads-ssl.webflow.com/5e4eab335c128658e8a2b36e/5f530e32826a474fc479bdaa_T_DekkerDefault_Portrait.jpg',
+        featuredItems: {
+            item1: 'item1',
+            item2: 'item1',
+            item3: 'item1',
+            item4: 'item1',
+            item5: 'item1',
+            item6: 'item1',
+        }
+    },
+
+    {
         title: 'DAVE HAS NO SITUATIONAL AWARENESS',
         author: 'Kodiris',
         date: '9 SEP 2020',
