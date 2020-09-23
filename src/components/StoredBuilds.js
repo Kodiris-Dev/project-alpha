@@ -1,6 +1,6 @@
 const StoredBuilds = [
     {
-        title: 'PLEASE HELP ME',
+        title: 'Trending Test',
         author: 'Kodiris',
         date: '9 SEP 2020',
         hero: 'Boris',
@@ -75,10 +75,10 @@ const StoredBuilds = [
         title: 'PLS FIRE KODIRIS PLS FIRE KODIRIS PLS FIRE KODIRIS PLS FIRE KODIRIS PLS FIRE KODIRIS',
         author: 'Lentor',
         date: '9 SEP 2020',
-        hero: 'Sevarog',
-        upvotes: 10,
-        patch: '0.5.2',
-        role: 'SOLO',
+        hero: 'Boris',
+        upvotes: 100,
+        patch: '0.5.5',
+        role: 'Jungle',
         displayBanner: 'https://uploads-ssl.webflow.com/5e4dd70c09d48fd33df2de2f/5f66f7929c4691c698a7ed02_T_SevarogBloodred_Portrait.jpg',
         featuredItems: {
             item1: 'item1',

@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from '../logo.svg';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
@@ -21,17 +20,15 @@ const useStyles = makeStyles((theme) => ({
     paper: {
       textAlign: 'center',
       color: theme.palette.text.secondary,
-      height: '98.5%',
-      backgroundColor: '#080808',
+      backgroundColor: 'transparent',
       color: 'white',
-      padding: '10px',
       paddingBottom: '0px',
     },
     sides: {
         textAlign: 'center',
         color: theme.palette.text.secondary,
         height: '100%',
-        backgroundColor: 'black',
+        backgroundColor: 'transparent',
         color: 'white',
       },
   }));

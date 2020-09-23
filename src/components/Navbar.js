@@ -172,7 +172,7 @@ export default function PrimarySearchAppBar() {
         <Toolbar>
           <img className="fhn-nav-logo" src="https://uploads-ssl.webflow.com/5e4dd70c09d48fd33df2de2f/5f56e625192d6f7419894cd2_FHN_White.svg"></img>
           <Typography noWrap>
-          <NavLink style={{borderLeft: "1px #7DBCC9 solid"}} to={"/"} exact className="navlink" exact activeClassName="activeLink">FAULTFIRE</NavLink>
+          <NavLink style={{borderLeft: "1px #7DBCC9 solid"}} to={"/"} exact className="navlink" exact activeClassName="activeLink">FAULTARIA</NavLink>
           </Typography>
           <Typography noWrap>
           <NavLink to={"/create"} exact className="navlink" exact activeClassName="activeLink">CREATE</NavLink>
