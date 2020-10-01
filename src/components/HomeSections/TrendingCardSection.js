@@ -2,7 +2,6 @@ import React from 'react'
 import DisplayCardBuild from '../Display/DisplayCardBuild'
 import StoredBuilds from '../StoredBuilds'
 import { makeStyles } from '@material-ui/core/styles';
-import Carousel from './Carousel'
 
 var faultBlue = '#7DBCC9';
 const useStyles = makeStyles((theme) => ({
