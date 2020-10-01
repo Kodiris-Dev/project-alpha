@@ -6,7 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
 
 import CreateGrid from './CreateViews/CreateGrid'
-
+import Step1 from '../assets/step1.png'
 
 
 
@@ -17,12 +17,14 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: '0px',
       flexGrow: 1,
       padding: '0px',
+      backgroundColor: 'black',
+      backgroundImage: `url(${Step1})`,
     },
     paper: {
       textAlign: 'center',
       color: theme.palette.text.secondary,
       height: '98.5%',
-      backgroundColor: 'black',
+      backgroundColor: 'transparent',
       color: 'white',
       padding: '10px',
       paddingBottom: '0px',

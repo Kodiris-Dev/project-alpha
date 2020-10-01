@@ -4,18 +4,20 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden'
 import { Link } from 'react-router-dom'
+import { TextareaAutosize } from '@material-ui/core';
 
 var faultBlue = '#7DBCC9';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    paddingTop: 100,
+    paddingTop: 5,
+    display: 'flex',
+    justifyContent: 'center',
   },
   paper: {
     textAlign: 'center',
     color: theme.palette.text.secondary,
-    height: '160px',
     backgroundColor: 'transparent',
     color: 'white',
   },
@@ -36,47 +38,46 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'flex-end',
 },
   step: {
-      display: 'inline-block',
-      margin: '0px',
-      marginLeft: '0px',
-      fontSize: '18px',
-      marginTop: 15,
+      display: 'flex',
       position: 'relative',
-      bottom: -2,
-      width: 100,
-      textAlign: 'left'
+  },
+  stepLabel: {
+    fontSize: 25,
+    paddingRight: 5,
   },
   square: {
     //To make Square Shape
     position: 'relative',
-    left: -20,
-    width: 40,
-    height: 40,
+    width: 35,
+    height: 35,
     backgroundColor: '#14ff5f',
     transform: 'rotate(45deg)',
-    marginTop: '10px',
     backgroundColor: 'black',
     border: '1px solid',
     borderColor: faultBlue,
+    marginRight: 20,
  },
  squareActive: {
-    //To make Square Shape
-    position: 'relative',
-    width: 40,
-    height: 40,
-    backgroundColor: '#14ff5f',
-    transform: 'rotate(45deg)',
-    marginTop: '10px',
-    backgroundColor: faultBlue,
-    border: '1px solid',
-    borderColor: faultBlue,
- },
+  //To make Square Shape
+  position: 'relative',
+  width: 35,
+  height: 35,
+  backgroundColor: '#14ff5f',
+  transform: 'rotate(45deg)',
+  backgroundColor: faultBlue,
+  border: '1px solid',
+  borderColor: faultBlue,
+  marginRight: 20,
+},
   stepValue: {
       position: 'absolute',
       transform: 'rotate(-45deg)',
       top: '5%',
       left: '30%',
       fontSize: '25px',
+  },
+  stepWrapper: {
+    display: 'flex',
   }
 }));
 
@@ -85,57 +86,43 @@ export default function CategoryView() {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={0}>
-        <Grid item xs={12}>
-          <Paper className={classes.paper}>
-                <div className={classes.stepDiv}>
-                <div className={classes.square}>
-                        <div className={classes.stepValue}>1</div>
-                    </div>
-                    <p className={classes.step}>SETUP</p>
-                    
-                </div>
-            </Paper>
-        </Grid>
-        <Grid item xs={12}>
-          <Paper className={classes.paper}>
-            <div className={classes.stepDiv}>
-            <Link to="/create/details">
-                  <div className={classes.square}>
-                    <div className={classes.stepValue}>2</div>
-                  </div>
-                </Link> 
-                <p className={classes.step}>DETAILS</p>
-            </div>
-          </Paper>
-        </Grid>
-        <Grid item xs={12}>
-          <Paper className={classes.paper}>
-            <div className={classes.stepDiv}>
-            <Link to="/create/customize">
-                <div className={classes.square}>
-                    <div className={classes.stepValue}>3</div>
-                </div>
-                </Link>
-                <p className={classes.step}>CUSTOMIZE</p>
-
-            </div>
-          </Paper>
-        </Grid>
-        <Grid item xs={12}>
-          <Paper className={classes.paper} style={{borderRight: "none"}}>
-            <div className={classes.stepDiv}>
-            <Link to="/create/review">
-                <div className={classes.square}>
-                    <div className={classes.stepValue}>4</div>
-                </div>
-                </Link>
-                <p className={classes.step}>REVIEW</p>
-
-            </div>
-          </Paper>
-        </Grid>
-      </Grid>
+      <div className={classes.stepWrapper}>
+        <div className={classes.step}>
+          <div className={classes.squareActive}>
+            <div className={classes.stepValue}>1</div>
+          </div>
+          <div className={classes.stepLabel}>SETUP</div>
+        </div>
+        <div style={{borderBottom: '1px dashed white', height: 20, width: 100}}></div>
+      </div>
+      <div className={classes.stepWrapper}>
+        <div className={classes.step}>
+          <div className={classes.square}>
+            <div className={classes.stepValue}>2</div>
+          </div>
+          <div className={classes.stepLabel}>DETAILS</div>
+        </div>
+        <div style={{borderBottom: '1px dashed white', height: 20, width: 100}}></div>
+      </div>
+      <div className={classes.stepWrapper}>
+        <div className={classes.step}>
+          <div className={classes.square}>
+            <div className={classes.stepValue}>3</div>
+          </div>
+          <div className={classes.stepLabel}>CUSTOMIZE</div>
+        </div>
+        <div style={{borderBottom: '1px dashed white', height: 20, width: 100}}></div>
+      </div>
+      <div className={classes.stepWrapper}>
+        <div className={classes.step}>
+          <div className={classes.square}>
+            <div className={classes.stepValue}>4</div>
+          </div>
+          <div className={classes.stepLabel}>REVIEW</div>
+        </div>
+        
+      </div>
+      
     </div>
   );
 }
