@@ -2,6 +2,8 @@ import { BorderAll } from '@material-ui/icons'
 import React from 'react'
 import { useState, useEffect } from 'react'
 import fire from '../fire'
+import Login from './Login'
+import Hero from './Hero'
 
 export default function Signin() {
     const[user, setUser] = useState('')
@@ -79,8 +81,25 @@ export default function Signin() {
     }, [])
 
     return (
-        <div>
-            This is the Sign in Component
+        <div style={{color: 'white', marginTop: 100}}>
+            {user ? (
+             <Hero handleLogout={handleLogout}/>
+            ) : (
+            <Login 
+                email={email}
+                setEmail={setEmail}
+                password={password}
+                setPassword ={setPassword}
+                handleLogin={handleLogin}
+                handleSignup={handleSignup}
+                hasAccount={hasAccount}
+                setHasAccount={setHasAccount}
+                emailError={emailError}
+                passwordError={passwordError}
+            />
+            )}
+            
+
         </div>
     )
 }
