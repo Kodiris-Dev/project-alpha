@@ -219,7 +219,7 @@ export default function HeroPage({ match }) {
                           PREMIUM MEMBERSHIP
                       </div>
                     </div>
-                      { StoredBuilds.map(storedBuildsObj => setStoredBuilds(storedBuildsObj, HeroList))}
+                      { StoredBuilds.map(storedBuildsObj => setStoredBuilds(storedBuildsObj))}
                   </div>
                   <div className={classes.contentRight}>
                       <SidePanel />

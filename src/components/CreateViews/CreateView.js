@@ -16,11 +16,11 @@ import Grid from '@material-ui/core/Grid';
 import '../Hero/HeroList'
 import printHeroName from './printHeroName'
 import HeroList from '../Hero/HeroList'
-import { heroName } from './printHeroName'
+
 import Button from '@material-ui/core/Button';
+import Title from './Setup/Title'
 
 var faultBlue = '#7DBCC9';
-console.log(heroName)
 
 const CssTextField = withStyles({
   root: {
@@ -82,7 +82,7 @@ const useStyles = makeStyles((theme) => ({
       margin: 0,
   },
   catBorder: {
-    border: '1px grey solid',
+
     backgroundColor: 'black',
     width: '50%',
 },
@@ -107,13 +107,7 @@ catName: {
      height: 390,
      overflowY: 'auto',
      overflowX: 'hidden',
-     border: '1px purple solid',
  },
- heroSelectRight: {
-    width: '100%',
-    border: '1px pink solid',
-    height: '100%',
-},
 heroSelectContainer: {
     width: "50%"
 },
@@ -135,6 +129,12 @@ activeHero: {
   border: '1px solid',
   borderColor: faultBlue
 },
+footer: {
+  position: 'absolute',
+  bottom: 0,
+  width: '57.5%',
+  marginBottom: 30,
+}
 
 }));
 
@@ -172,80 +172,23 @@ function CreateView() {
 
 
   return (
-      <div style={{height: '100%'}}>
-            <div className={classes.fieldWrapper}>
-                <h2 className={classes.header}>TITLE</h2>
-                <form className={classes.root} noValidate autoComplete="off">
-                    <CssTextField style={{marginLeft: 0, marginRight: 0}}
-                        size="small"
-                        required
-                        className={classes.title}
-                        label="Title Name"
-                        variant="outlined"
-                        id="custom-css-outlined-input"
-                        InputProps={{
-                            className: classes.input
-                        }}
-                    />
-                </form>
-            </div>
-            <div className={classes.fieldWrapper}>
-                <h2 className={classes.header}>CATEGORY</h2>
-                <ToggleButtonGroup className={classes.catGroup}
-                    value={alignment}
-                    exclusive
-                    onChange={handleAlignment}
-                    aria-label="text alignment"
-                    >
-                    <ToggleButton className={classes.catBorder} value="left" aria-label="left aligned">
-                        <div className={classes.catName}>GUIDE</div>
-                    </ToggleButton>
-                    <ToggleButton className={classes.catBorder} value="right" aria-label="right aligned">
-                        <div className={classes.catName}>BUILD</div>
-                    </ToggleButton>
-                </ToggleButtonGroup>
-            </div>
-            <div className={classes.fieldWrapper}>
-                <h2 className={classes.header}>SELECT HERO</h2>
-                <div style={{display: 'flex', border: 'solid 1px red'}}>
-                <div style={{border: '1px solid green', width: '50%', paddingRight: '20px'}}>
-                  <div style={{display: 'flex', marginTop: '8px'}}>
-                        <div id = "heroImage" className={classes.square}></div>
-                        <div className={classes.selectHero} id="heroName">{heroName}</div>
-                  </div>
-                
-                  <div className={classes.heroSelectLeft}>
-                        <div className={classes.gridRoot}>
-                            <Grid container spacing={3}>
-                                {HeroList.map(heroListObj => getHeroList(heroListObj))}
-                            </Grid>
-                  </div>
-                </div>
-                </div>
-                
-                <div className={classes.heroSelectContainer}>
-                    
-                    <div className={classes.heroSelectRight}>
-                        right
-                    </div>
-                </div>
-                </div>
-            <div className="footer" style={{border: '1px purple solid'}}>
+      <div style={{position: 'relative', border: '1px solid blue'}} style={{height: '100%'}} >
+        <Title />
+            <div className={classes.footer}>
               <div style={{display: 'flex', justifyContent: 'space-between', marginTop: '30px'}}>
                 <div>
 
                 </div>
                 <div>
-                  <Link to="/create/details">
-                    <Button variant="contained" color="primary">
+                  <Link to="/create/heroselect">
+                    <Button variant="contained" color="primary" style={{width: 100}}>
                         NEXT
                     </Button>
                   </Link>
                 </div>   
               </div>
             </div>    
-            </div>
-        </div>         
+          </div>       
   );
 }
 
