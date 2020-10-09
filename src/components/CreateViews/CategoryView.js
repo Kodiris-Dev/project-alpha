@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     paddingTop: 5,
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
   },
   paper: {
     textAlign: 'center',
@@ -38,8 +38,12 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'flex-end',
 },
   step: {
-      display: 'flex',
       position: 'relative',
+      display: 'flex',
+      flexDirection: 'column',
+    alignItems: 'center',
+    width: 150,
+    backgroundColor: 'transparent'
   },
   stepLabel: {
     fontSize: 25,
@@ -55,7 +59,6 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: 'black',
     border: '1px solid',
     borderColor: faultBlue,
-    marginRight: 20,
  },
  squareActive: {
   //To make Square Shape
@@ -67,7 +70,6 @@ const useStyles = makeStyles((theme) => ({
   backgroundColor: faultBlue,
   border: '1px solid',
   borderColor: faultBlue,
-  marginRight: 20,
 },
   stepValue: {
       position: 'absolute',
@@ -78,6 +80,10 @@ const useStyles = makeStyles((theme) => ({
   },
   stepWrapper: {
     display: 'flex',
+  },
+  line: {
+    height: 20,
+    width: 100,
   }
 }));
 
@@ -93,16 +99,17 @@ export default function CategoryView() {
           </div>
           <div className={classes.stepLabel}>SETUP</div>
         </div>
-        <div style={{borderBottom: '1px dashed white', height: 20, width: 100}}></div>
+        <div className={classes.line}></div>
       </div>
       <div className={classes.stepWrapper}>
+        
         <div className={classes.step}>
           <div className={classes.square}>
             <div className={classes.stepValue}>2</div>
           </div>
           <div className={classes.stepLabel}>DETAILS</div>
         </div>
-        <div style={{borderBottom: '1px dashed white', height: 20, width: 100}}></div>
+        <div className={classes.line}></div>
       </div>
       <div className={classes.stepWrapper}>
         <div className={classes.step}>
@@ -111,7 +118,7 @@ export default function CategoryView() {
           </div>
           <div className={classes.stepLabel}>CUSTOMIZE</div>
         </div>
-        <div style={{borderBottom: '1px dashed white', height: 20, width: 100}}></div>
+        <div className={classes.line}></div>
       </div>
       <div className={classes.stepWrapper}>
         <div className={classes.step}>
