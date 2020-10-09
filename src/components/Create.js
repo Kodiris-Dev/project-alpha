@@ -13,18 +13,16 @@ import Step1 from '../assets/step1.png'
 const useStyles = makeStyles((theme) => ({
     root: {
       marginTop: '0px',
-      margin: '20px',
       marginBottom: '0px',
       flexGrow: 1,
       padding: '0px',
-      backgroundColor: 'black',
       backgroundImage: `url(${Step1})`,
     },
     paper: {
       textAlign: 'center',
       color: theme.palette.text.secondary,
       height: '98.5%',
-      backgroundColor: 'transparent',
+      backgroundColor: 'rgba(0, 0, 0, 0.5)',
       color: 'white',
       padding: '10px',
       paddingBottom: '0px',

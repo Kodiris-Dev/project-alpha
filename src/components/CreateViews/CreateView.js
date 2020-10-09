@@ -16,12 +16,11 @@ import Grid from '@material-ui/core/Grid';
 import '../Hero/HeroList'
 import printHeroName from './printHeroName'
 import HeroList from '../Hero/HeroList'
-import { heroName } from './printHeroName'
+
 import Button from '@material-ui/core/Button';
 import Title from './Setup/Title'
 
 var faultBlue = '#7DBCC9';
-console.log(heroName)
 
 const CssTextField = withStyles({
   root: {
@@ -133,7 +132,8 @@ activeHero: {
 footer: {
   position: 'absolute',
   bottom: 0,
-  width: '55%',
+  width: '57.5%',
+  marginBottom: 30,
 }
 
 }));
@@ -180,8 +180,8 @@ function CreateView() {
 
                 </div>
                 <div>
-                  <Link to="/create/details">
-                    <Button variant="contained" color="primary">
+                  <Link to="/create/heroselect">
+                    <Button variant="contained" color="primary" style={{width: 100}}>
                         NEXT
                     </Button>
                   </Link>
