@@ -59,10 +59,22 @@ export default function AddSet() {
     setOpen(false);
   };
 
-  var [selected1, selected] = useState('None Selected')
-  
+  var [selected1, setAspect] = useState('None Selected')
+  var [selected2, setAspect2] = useState('None Selected')
+  function selected(name) {
+      console.log(name)
+      console.log("State 1: " + selected1)
+      console.log("State 2: " + selected2)
+      if (selected1 == 'None Selected') {
+        setAspect(selected1 = name)
+      } else if (selected1 != 'None Selected') {
+        setAspect2(selected2 = name)
+      }
+  }
+
   function body() {
-    console.log('selected aspect: ' + selected1)
+    console.log('selected aspect 1 : ' + selected1)
+    console.log('selected aspect 2 : ' + selected2)
     return(
     <div style={modalStyle} className={classes.paper}>
       <div className={classes.selectedWrapper}>
@@ -70,21 +82,21 @@ export default function AddSet() {
             <AspectImg name={selected1}/>
           </div>
           <div className={classes.selected}>
-            <AspectImg name="King"/>
+            <AspectImg name={selected2}/>
           </div>
       </div>
       <div className={classes.aspectsWrapper}>
           <div className={classes.aspectsRow}>
-              <div onClick={ () => selected(selected1 = 'Templar')}>
+              <div onClick={ () => selected('Templar')}>
                 <AspectImg name="Templar"/>
               </div>
-              <div onClick={ () => selected(selected1 = 'Magician')}>
+              <div onClick={ () => selected('Magician')}>
                 <AspectImg name="Magician"/>
               </div>
-              <div onClick={ () => selected(selected1 = 'Titan')}>
+              <div onClick={ () => selected('Titan')}>
                 <AspectImg name="Titan"/>
               </div>
-              <div onClick={ () => selected(selected1 = 'King')}>
+              <div onClick={ () => selected('King')}>
                 <AspectImg name="King"/>
               </div>
           </div>

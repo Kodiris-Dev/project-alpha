@@ -6,7 +6,7 @@ import Login from './Login'
 import Hero from './Hero'
 
 export default function Signin() {
-    const[user, setUser] = useState('')
+    const [user, setUser] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [emailError, setEmailError] = useState('')
@@ -22,7 +22,6 @@ export default function Signin() {
         setEmailError('')
         setPasswordError('')
     }
-
 
     const handleLogin = () => {
         clearErrors()
