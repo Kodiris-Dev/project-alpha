@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './styles/index.css'
 
 import Home from './components/Home'
 import BrowsePage from './components/BrowsePage'
@@ -13,6 +13,8 @@ import Review from './components/Review'
 import HeroList from './components/Hero/HeroList'
 import HeroSelect from './components/CreateViews/HeroSelect/HeroSelect'
 import Signin from './Signin/Signin'
+import Details from './components/CreateViews/Details/Details'
+import Aspects from './components/CreateViews/Details/Aspects/Aspects'
 
 function App() {
   const getHeroList = (heroListObj) => {
@@ -28,6 +30,8 @@ function App() {
         <Route component={BrowsePage} path="/browse" />
         <Route component={Review} path="/create/review" />
         <Route component={Customize} path="/create/customize" />
+        <Route component={Aspects} path="/create/details/aspects" />
+        <Route component={Details} path="/create/details" />
         <Route component={HeroSelect} path="/create/heroselect" />
         <Route component={Create} path="/create" />
         <Route component={Home} path="/" />

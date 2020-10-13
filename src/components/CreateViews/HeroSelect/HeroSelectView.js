@@ -285,7 +285,7 @@ function HeroSelectView() {
                   </Link>
                 </div>   
                 <div>
-                  <Link to="/create/heroselect">
+                  <Link to="/create/details">
                     <Button variant="contained" color="primary" style={{width: 100}}>
                         NEXT
                     </Button>

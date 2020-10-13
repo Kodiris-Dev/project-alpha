@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
       flexGrow: 1,
       padding: '0px',
       backgroundImage: `url(${Step1})`,
+      backgroundSize: 'cover',
     },
     paper: {
       textAlign: 'center',
