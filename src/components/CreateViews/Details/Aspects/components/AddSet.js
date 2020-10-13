@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import AspectImg from './AspectImg'
@@ -59,19 +59,15 @@ export default function AddSet() {
     setOpen(false);
   };
 
+  var [selected1, selected] = useState('None Selected')
+  
   function body() {
-    var selected1 = 'test'
-    var selected2 = ''
-    function selected(aspect) {
-        selected1 = aspect
-        console.log('selected aspect: ' + selected1)
-        return (selected1)
-    }
+    console.log('selected aspect: ' + selected1)
     return(
     <div style={modalStyle} className={classes.paper}>
       <div className={classes.selectedWrapper}>
           <div className={classes.selected}>
-            {selected1}
+            <AspectImg name={selected1}/>
           </div>
           <div className={classes.selected}>
             <AspectImg name="King"/>
@@ -79,13 +75,18 @@ export default function AddSet() {
       </div>
       <div className={classes.aspectsWrapper}>
           <div className={classes.aspectsRow}>
-              <div onClick={ () => selected('Templar')}>
+              <div onClick={ () => selected(selected1 = 'Templar')}>
                 <AspectImg name="Templar"/>
               </div>
-
-            <AspectImg name="Magician"/>
-            <AspectImg name="Titan"/>
-            <AspectImg name="King"/>
+              <div onClick={ () => selected(selected1 = 'Magician')}>
+                <AspectImg name="Magician"/>
+              </div>
+              <div onClick={ () => selected(selected1 = 'Titan')}>
+                <AspectImg name="Titan"/>
+              </div>
+              <div onClick={ () => selected(selected1 = 'King')}>
+                <AspectImg name="King"/>
+              </div>
           </div>
           <div className={classes.aspectsRow}>
             <AspectImg name="Clairvoyant"/>
