@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import fire from '../fire'
 import Login from './Login'
 import Hero from './Hero'
+import './style.css'
 
 export default function Signin() {
     const [user, setUser] = useState('')
@@ -80,7 +81,7 @@ export default function Signin() {
     }, [])
 
     return (
-        <div style={{color: 'white', marginTop: 100}}>
+        <div>
             {user ? (
              <Hero handleLogout={handleLogout}/>
             ) : (

@@ -69,6 +69,7 @@ function AspectsView() {
     setAlignment(newAlignment);
   };
 
+
   return (
       <div style={{position: 'relative'}} style={{height: '100%'}} >
             <AspectsSteps />
@@ -123,7 +124,6 @@ function AspectsView() {
               marginTop: 20
             }}>
               <div className={classes.setWrapper}>
-                <Set />
                 <AddSet />
               </div>
             </div>

@@ -8,9 +8,6 @@ const useStyles = makeStyles((theme) => ({
         width: 100,
         height: 100,
         position: 'relative',
-        margin: 10,
-        marginLeft: 20,
-        marginRight: 20,
     },
     aspectName: {
         backgroundColor: 'black',

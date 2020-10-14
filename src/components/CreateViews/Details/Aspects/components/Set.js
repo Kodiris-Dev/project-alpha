@@ -1,14 +1,14 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import TextField from '@material-ui/core/TextField'
+import AspectImg from './AspectImg'
 
 
 var faultBlue = '#7DBCC9';
-var aspect1= 'https://global-uploads.webflow.com/5d44771a95c1f5121689f944/5de96653519095c41422e30d_Fault_Factions-09.png'
-var aspect2= 'https://global-uploads.webflow.com/5d44771a95c1f5121689f944/5de9665449103c2aee94774d_Fault_Factions-08.png'
+
 const useStyles = makeStyles((theme) => ({
     wrapper: {
-        width: '80%',
+        width: '100%',
         display: 'flex',
         marginTop: 20,
     },
@@ -52,8 +52,10 @@ const useStyles = makeStyles((theme) => ({
         width: '100%',
       }
 }))
-export default function Set() {
+export default function Set(props) {
     const classes = useStyles()
+    const aspect1 = props.aspect1
+    const aspect2 = props.aspect2
     return (
         <div className={classes.wrapper}>
             <div className={classes.left}>
@@ -78,8 +80,8 @@ export default function Set() {
                 />
             </form>
             <div className={classes.aspectWrapper}>
-                <div className={classes.aspectIcon} style={{backgroundImage: `url(${aspect1})`}}></div>
-                <div className={classes.aspectIcon} style={{backgroundImage: `url(${aspect2})`}}></div>
+                <AspectImg name={aspect1}/>
+                <AspectImg name={aspect2}/>
             </div>
             </div>
             <div className={classes.right}>
