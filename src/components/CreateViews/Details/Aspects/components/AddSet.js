@@ -4,6 +4,7 @@ import Modal from '@material-ui/core/Modal';
 import AspectImg from './AspectImg'
 import CloseIcon from '@material-ui/icons/Close';
 import Set from './Set'
+import { createBootstrapComponent } from 'react-bootstrap/esm/ThemeProvider';
 
 
 function getModalStyle() {
@@ -57,39 +58,46 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
+var storedAspects1 = []
+var storedAspects2 = []
+var count = 0
+
 export default function AddSet() {
-  var [isCreated, setCreated] = useState(false)
   var [selected1, setAspect] = useState('None Selected')
   var [selected2, setAspect2] = useState('None Selected')
+
+  var [ifDeleted, delSet] = useState(false)
+
+  console.log('storedArray1:', storedAspects1)
+  console.log('storedArray2:', storedAspects2)
 
   const classes = useStyles();
   // getModalStyle is not a pure function, we roll the style only on the first render
   const [modalStyle] = React.useState(getModalStyle);
   const [open, setOpen] = React.useState(false);
 
-  const handleOpen = () => {
+  function handleOpen() {
     setOpen(true);
   };
 
   const handleClose = () => {
     setOpen(false);
-    setCreated(isCreated = true)
+    storedAspects1.push(selected1)
+    storedAspects2.push(selected2)
+    setAspect(selected1 = 'None Selected')
+    setAspect2(selected2 = 'None Selected')
   };
-  const deleteSet = () => {
-    setCreated(isCreated = false)
-  };
+
+
 
 
   function selected(name) {
-      console.log(name)
-      console.log("State 1: " + selected1)
-      console.log("State 2: " + selected2)
-      if (selected1 != 'None Selected' && selected2 != 'None Selected') {
+      if (selected1 !== 'None Selected' && selected2 !== 'None Selected') {
         alert('Please remove an aspect before selecting another')
         }
-       else if (selected1 != 'None Selected') {
+       else if (selected1 !== 'None Selected') {
         setAspect2(selected2 = name)
-      } else if (selected1 == 'None Selected') {
+      } else if (selected1 === 'None Selected') {
         setAspect(selected1 = name)
       }
   }
@@ -103,9 +111,51 @@ export default function AddSet() {
     }
   }
 
+function deleteSet(id) {
+    storedAspects1.splice(id, 1)
+    storedAspects2.splice(id, 1)
+    delSet(ifDeleted = true)
+    console.log('storedArray1:', storedAspects1)
+    console.log('storedArray2:', storedAspects2)
+}
+
+function CreateSet(props) {
+    console.log('id:', props.id)
+    console.log('value:', props.value)
+    return (
+        <div>
+            <div style={{display: 'flex'}}>
+                  <div className={classes.contentWrapper}>
+                  <Set aspect1={props.value} aspect2={storedAspects2[props.id]}/>
+                  </div>
+                    <div className={classes.editWrapper}>
+                    <button type="button" onClick={() => deleteSet(props.id)}>
+                        Delete Set
+                    </button>
+                    </div> 
+                </div>
+
+        </div>
+    )
+}
+
+function MapSet(props) {
+    console.log('AspectArray:', props.array)
+    var array = props.array
+    var arrayItems = array.map((aspect) =>
+    <CreateSet id={storedAspects1.indexOf(aspect)} key={aspect.toString()} value={aspect} />
+    )
+    return (
+        <div>
+            {arrayItems}
+        </div>
+    )
+}
+
+
+
   function body() {
-    console.log('selected aspect 1 : ' + selected1)
-    console.log('selected aspect 2 : ' + selected2)
+
     return(
     <div style={modalStyle} className={classes.paper}>
       <div className={classes.selectedWrapper}>
@@ -170,31 +220,37 @@ export default function AddSet() {
     </div>
       )
   }
-
-  function CreateSet(props) {
-      const isSet = props.isCreated
-      if (isSet) {
-          return (
-              <div>
-              <div style={{display: 'flex'}}>
-                  <div className={classes.contentWrapper}>
-                    <Set aspect1={selected1} aspect2={selected2}/>
-                  </div>
-                    <div className={classes.editWrapper}>
-                    <button type="button" onClick={deleteSet}>
-                        Delete Set
-                    </button>
-                </div> 
-              </div>
-              <AddSet />
-              </div>
-
-
-          )
-      }
-    return (
+  if (ifDeleted) {
+      delSet(ifDeleted=false)
+      return (
+        <div style={{marginTop: 20}}>
         <div>
-            <button type="button" onClick={handleOpen}>
+              <div>
+              <MapSet array={storedAspects1} />
+              </div>
+              <button type="button" onClick={() => handleOpen()}>
+              Add New Set
+          </button>
+          <Modal
+              open={open}
+              onClose={handleClose}
+              aria-labelledby="simple-modal-title"
+              aria-describedby="simple-modal-description"
+          >
+              {body()}
+          </Modal>
+          </div>
+      </div>
+      )
+  }
+
+  return (
+    <div style={{marginTop: 20}}>
+      <div>
+            <div>
+            <MapSet array={storedAspects1} />
+            </div>
+            <button type="button" onClick={() => handleOpen()}>
             Add New Set
         </button>
         <Modal
@@ -206,12 +262,7 @@ export default function AddSet() {
             {body()}
         </Modal>
         </div>
-    )
-  }
-
-  return (
-    <div style={{marginTop: 20}}>
-      <CreateSet isCreated={isCreated}/>
     </div>
   );
 }
+

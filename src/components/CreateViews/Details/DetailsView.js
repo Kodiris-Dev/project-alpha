@@ -13,7 +13,7 @@ import Grid from '@material-ui/core/Grid';
 
 import printHeroName from '../printHeroName'
 import Button from '@material-ui/core/Button';
-
+import { useState } from 'react'
 
 import DetailsSteps from './DetailsSteps'
 
@@ -146,6 +146,8 @@ function changeOpacity() {
 function DetailsView() {
   const classes = useStyles();
   const [alignment, setAlignment] = React.useState('left');
+
+  const [selected, setSelected] = useState(false)
 
   const handleAlignment = (event, newAlignment) => {
     setAlignment(newAlignment);
