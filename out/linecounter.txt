@@ -1,0 +1,297 @@
+===============================================================================
+EXTENSION NAME : linecounter
+EXTENSION VERSION : 0.2.7
+-------------------------------------------------------------------------------
+count time : 2020-10-23 12:24:35
+count workspace : c:\Users\aruiz68\Documents\GitHub\project-alpha
+total files : 271
+total code lines : 21856
+total comment lines : 296
+total blank lines : 658
+
+    statistics
+   |      extension|     total code|  total comment|    total blank|percent|
+   -------------------------------------------------------------------------
+   |               |             24|              1|              5|   0.11|
+   |          .json|          15335|              0|              4|     70|
+   |           .svg|            141|              0|              0|   0.65|
+   |            .js|           6080|             89|            585|     28|
+   |            .md|             37|             12|             31|   0.17|
+   |          .html|             22|             23|              1|   0.10|
+   |           .txt|              6|            170|             13|  0.027|
+   |           .css|            134|              1|             19|   0.61|
+   |           .map|              4|              0|              0|  0.018|
+   |         .cache|             73|              0|              0|   0.33|
+   -------------------------------------------------------------------------
+.env, code is 1, comment is 0, blank is 0.
+.firebase\hosting.YnVpbGQ.cache, code is 73, comment is 0, blank is 0.
+.firebaserc, code is 5, comment is 0, blank is 0.
+.gitignore, code is 18, comment is 1, blank is 5.
+build\asset-manifest.json, code is 31, comment is 0, blank is 1.
+build\assets\fhn.svg, code is 14, comment is 0, blank is 0.
+build\assets\norweginator.png, it is a binary file.
+build\assets\presskit\Banners\Dawn Banner.jpg, it is a binary file.
+build\assets\presskit\Banners\Dusk Banner.png, it is a binary file.
+build\assets\presskit\Banners\OP BW Banner.jpg, it is a binary file.
+build\assets\presskit\Banners\OP Purple Banner.jpg, it is a binary file.
+build\assets\presskit\Banners\Red Buff Banner.jpg, it is a binary file.
+build\assets\presskit\Hero Icons\Boris\t_Boris_AbilityIcon_E.png, it is a binary file.
+build\assets\presskit\Hero Icons\Boris\t_Boris_AbilityIcon_LMB.png, it is a binary file.
+build\assets\presskit\Hero Icons\Boris\t_Boris_AbilityIcon_P.png, it is a binary file.
+build\assets\presskit\Hero Icons\Boris\t_Boris_AbilityIcon_Q.png, it is a binary file.
+build\assets\presskit\Hero Icons\Boris\t_Boris_AbilityIcon_R.png, it is a binary file.
+build\assets\presskit\Hero Icons\Boris\t_Boris_AbilityIcon_RMB.png, it is a binary file.
+build\assets\presskit\Hero png's\BelicaDefault.png, it is a binary file.
+build\assets\presskit\Hero png's\Boris.png, it is a binary file.
+build\assets\presskit\Hero png's\CountessDefault.png, it is a binary file.
+build\assets\presskit\Hero png's\GideonDefault.png, it is a binary file.
+build\assets\presskit\Hero png's\GreystoneDefault.png, it is a binary file.
+build\assets\presskit\Hero png's\KhaimeraDefault.png, it is a binary file.
+build\assets\presskit\Hero png's\KwangDefault.png, it is a binary file.
+build\assets\presskit\Hero png's\MurdockDefault.png, it is a binary file.
+build\assets\presskit\Hero png's\MurielDefault.png, it is a binary file.
+build\assets\presskit\Hero png's\NarbashDefault.png, it is a binary file.
+build\assets\presskit\Hero png's\SevarogDefault.png, it is a binary file.
+build\assets\presskit\Hero png's\Sparrow.png, it is a binary file.
+build\assets\presskit\Hero png's\SteelDefault.png, it is a binary file.
+build\assets\presskit\Hero png's\TwinblastDefault.png, it is a binary file.
+build\assets\presskit\hero-portraits\default-boris.jpg, it is a binary file.
+build\assets\presskit\hero-portraits\default-twinblast.jpg, it is a binary file.
+build\assets\presskit\hero-portraits\T_CountessDefault_Portrait.jpg, it is a binary file.
+build\assets\presskit\hero-portraits\T_GideonDefault_Portrait.jpg, it is a binary file.
+build\assets\presskit\hero-portraits\T_GreystoneDefault_Portrait.jpg, it is a binary file.
+build\assets\presskit\hero-portraits\T_KhaimeraDefault_Portrait.jpg, it is a binary file.
+build\assets\presskit\hero-portraits\T_KwangDefault_Portrait.jpg, it is a binary file.
+build\assets\presskit\hero-portraits\T_LtBelicaDefault_Portrait.jpg, it is a binary file.
+build\assets\presskit\hero-portraits\T_MurdockDefault_Portrait.jpg, it is a binary file.
+build\assets\presskit\hero-portraits\T_MurielDefault_Portrait.jpg, it is a binary file.
+build\assets\presskit\hero-portraits\T_NarbashDefault_Portrait.jpg, it is a binary file.
+build\assets\presskit\hero-portraits\T_SevarogBloodred_Portrait.jpg, it is a binary file.
+build\assets\presskit\hero-portraits\T_SevarogDefault_Portrait.jpg, it is a binary file.
+build\assets\presskit\hero-portraits\T_SparrowDefault_Portrait.jpg, it is a binary file.
+build\assets\presskit\hero-portraits\T_SteelDefault_Portrait.jpg, it is a binary file.
+build\assets\presskit\Logos\Fault Logo - Black.png, it is a binary file.
+build\assets\presskit\Logos\Fault Logo - White.png, it is a binary file.
+build\assets\presskit\Logos\SMS Logo - Black.png, it is a binary file.
+build\assets\presskit\Logos\SMS Logo - White.png, it is a binary file.
+build\assets\presskit\Map Screenshots\Core Dusk.jpg, it is a binary file.
+build\assets\presskit\Map Screenshots\Dusk Jungle.jpg, it is a binary file.
+build\assets\presskit\Map Screenshots\FaultBG.jpg, it is a binary file.
+build\assets\presskit\Map Screenshots\Jungle 1.png, it is a binary file.
+build\assets\presskit\Map Screenshots\Jungle 2.png, it is a binary file.
+build\assets\presskit\Map Screenshots\Murdock and Jungle.png, it is a binary file.
+build\favicon.ico, it is a binary file.
+build\index.html, code is 1, comment is 0, blank is 0.
+build\logo192.png, it is a binary file.
+build\logo512.png, it is a binary file.
+build\manifest.json, code is 25, comment is 0, blank is 0.
+build\precache-manifest.2628d4fb8cb33eff260f5b54a647eb82.js, code is 66, comment is 0, blank is 0.
+build\robots.txt, code is 3, comment is 1, blank is 0.
+build\service-worker.js, code is 14, comment is 17, blank is 8.
+build\static\css\main.c859e9ca.chunk.css, code is 1, comment is 1, blank is 0.
+build\static\css\main.c859e9ca.chunk.css.map, code is 1, comment is 0, blank is 0.
+build\static\js\2.90fdca82.chunk.js, code is 1, comment is 3, blank is 0.
+build\static\js\2.90fdca82.chunk.js.LICENSE.txt, code is 0, comment is 168, blank is 13.
+build\static\js\2.90fdca82.chunk.js.map, code is 1, comment is 0, blank is 0.
+build\static\js\main.2c49393e.chunk.js, code is 1, comment is 1, blank is 0.
+build\static\js\main.2c49393e.chunk.js.map, code is 1, comment is 0, blank is 0.
+build\static\js\runtime-main.1c47a842.js, code is 1, comment is 1, blank is 0.
+build\static\js\runtime-main.1c47a842.js.map, code is 1, comment is 0, blank is 0.
+build\static\media\agenda.2056da54.svg, code is 38, comment is 0, blank is 0.
+build\static\media\default-boris.7fe13b50.jpg, it is a binary file.
+build\static\media\default-gideon.86b829e8.jpg, it is a binary file.
+build\static\media\default-greystone.a4f45cc2.jpg, it is a binary file.
+build\static\media\default-muriel.b89f0d44.jpg, it is a binary file.
+build\static\media\default-twinblast.8f38b733.jpg, it is a binary file.
+build\static\media\details-aspects.7a6dc2c2.png, it is a binary file.
+build\static\media\details-intro.ca4daf49.png, it is a binary file.
+build\static\media\handyman-tools.b4d0b582.svg, code is 9, comment is 0, blank is 0.
+build\static\media\step1.c26d2f74.png, it is a binary file.
+firebase.json, code is 15, comment is 0, blank is 1.
+package-lock.json, code is 15190, comment is 0, blank is 0.
+package.json, code is 49, comment is 0, blank is 2.
+public\assets\fhn.svg, code is 14, comment is 0, blank is 0.
+public\assets\norweginator.png, it is a binary file.
+public\assets\presskit\Banners\Dawn Banner.jpg, it is a binary file.
+public\assets\presskit\Banners\Dusk Banner.png, it is a binary file.
+public\assets\presskit\Banners\OP BW Banner.jpg, it is a binary file.
+public\assets\presskit\Banners\OP Purple Banner.jpg, it is a binary file.
+public\assets\presskit\Banners\Red Buff Banner.jpg, it is a binary file.
+public\assets\presskit\Hero Icons\Boris\t_Boris_AbilityIcon_E.png, it is a binary file.
+public\assets\presskit\Hero Icons\Boris\t_Boris_AbilityIcon_LMB.png, it is a binary file.
+public\assets\presskit\Hero Icons\Boris\t_Boris_AbilityIcon_P.png, it is a binary file.
+public\assets\presskit\Hero Icons\Boris\t_Boris_AbilityIcon_Q.png, it is a binary file.
+public\assets\presskit\Hero Icons\Boris\t_Boris_AbilityIcon_R.png, it is a binary file.
+public\assets\presskit\Hero Icons\Boris\t_Boris_AbilityIcon_RMB.png, it is a binary file.
+public\assets\presskit\Hero png's\BelicaDefault.png, it is a binary file.
+public\assets\presskit\Hero png's\Boris.png, it is a binary file.
+public\assets\presskit\Hero png's\CountessDefault.png, it is a binary file.
+public\assets\presskit\Hero png's\GideonDefault.png, it is a binary file.
+public\assets\presskit\Hero png's\GreystoneDefault.png, it is a binary file.
+public\assets\presskit\Hero png's\KhaimeraDefault.png, it is a binary file.
+public\assets\presskit\Hero png's\KwangDefault.png, it is a binary file.
+public\assets\presskit\Hero png's\MurdockDefault.png, it is a binary file.
+public\assets\presskit\Hero png's\MurielDefault.png, it is a binary file.
+public\assets\presskit\Hero png's\NarbashDefault.png, it is a binary file.
+public\assets\presskit\Hero png's\SevarogDefault.png, it is a binary file.
+public\assets\presskit\Hero png's\Sparrow.png, it is a binary file.
+public\assets\presskit\Hero png's\SteelDefault.png, it is a binary file.
+public\assets\presskit\Hero png's\TwinblastDefault.png, it is a binary file.
+public\assets\presskit\hero-portraits\default-boris.jpg, it is a binary file.
+public\assets\presskit\hero-portraits\default-twinblast.jpg, it is a binary file.
+public\assets\presskit\hero-portraits\T_CountessDefault_Portrait.jpg, it is a binary file.
+public\assets\presskit\hero-portraits\T_GideonDefault_Portrait.jpg, it is a binary file.
+public\assets\presskit\hero-portraits\T_GreystoneDefault_Portrait.jpg, it is a binary file.
+public\assets\presskit\hero-portraits\T_KhaimeraDefault_Portrait.jpg, it is a binary file.
+public\assets\presskit\hero-portraits\T_KwangDefault_Portrait.jpg, it is a binary file.
+public\assets\presskit\hero-portraits\T_LtBelicaDefault_Portrait.jpg, it is a binary file.
+public\assets\presskit\hero-portraits\T_MurdockDefault_Portrait.jpg, it is a binary file.
+public\assets\presskit\hero-portraits\T_MurielDefault_Portrait.jpg, it is a binary file.
+public\assets\presskit\hero-portraits\T_NarbashDefault_Portrait.jpg, it is a binary file.
+public\assets\presskit\hero-portraits\T_SevarogBloodred_Portrait.jpg, it is a binary file.
+public\assets\presskit\hero-portraits\T_SevarogDefault_Portrait.jpg, it is a binary file.
+public\assets\presskit\hero-portraits\T_SparrowDefault_Portrait.jpg, it is a binary file.
+public\assets\presskit\hero-portraits\T_SteelDefault_Portrait.jpg, it is a binary file.
+public\assets\presskit\Logos\Fault Logo - Black.png, it is a binary file.
+public\assets\presskit\Logos\Fault Logo - White.png, it is a binary file.
+public\assets\presskit\Logos\SMS Logo - Black.png, it is a binary file.
+public\assets\presskit\Logos\SMS Logo - White.png, it is a binary file.
+public\assets\presskit\Map Screenshots\Core Dusk.jpg, it is a binary file.
+public\assets\presskit\Map Screenshots\Dusk Jungle.jpg, it is a binary file.
+public\assets\presskit\Map Screenshots\FaultBG.jpg, it is a binary file.
+public\assets\presskit\Map Screenshots\Jungle 1.png, it is a binary file.
+public\assets\presskit\Map Screenshots\Jungle 2.png, it is a binary file.
+public\assets\presskit\Map Screenshots\Murdock and Jungle.png, it is a binary file.
+public\favicon.ico, it is a binary file.
+public\index.html, code is 21, comment is 23, blank is 1.
+public\logo192.png, it is a binary file.
+public\logo512.png, it is a binary file.
+public\manifest.json, code is 25, comment is 0, blank is 0.
+public\robots.txt, code is 3, comment is 1, blank is 0.
+README.md, code is 37, comment is 12, blank is 31.
+src\App.js, code is 43, comment is 0, blank is 5.
+src\assets\agenda.svg, code is 38, comment is 0, blank is 0.
+src\assets\details-abilities.png, it is a binary file.
+src\assets\details-aspects.png, it is a binary file.
+src\assets\details-compatibility.png, it is a binary file.
+src\assets\details-intro.png, it is a binary file.
+src\assets\handyman-tools.svg, code is 9, comment is 0, blank is 0.
+src\assets\presskit\Banners\Dawn Banner.jpg, it is a binary file.
+src\assets\presskit\Banners\Dusk Banner.png, it is a binary file.
+src\assets\presskit\Banners\OP BW Banner.jpg, it is a binary file.
+src\assets\presskit\Banners\OP Purple Banner.jpg, it is a binary file.
+src\assets\presskit\Banners\Red Buff Banner.jpg, it is a binary file.
+src\assets\presskit\Hero Icons\Boris\t_Boris_AbilityIcon_E.png, it is a binary file.
+src\assets\presskit\Hero Icons\Boris\t_Boris_AbilityIcon_LMB.png, it is a binary file.
+src\assets\presskit\Hero Icons\Boris\t_Boris_AbilityIcon_P.png, it is a binary file.
+src\assets\presskit\Hero Icons\Boris\t_Boris_AbilityIcon_Q.png, it is a binary file.
+src\assets\presskit\Hero Icons\Boris\t_Boris_AbilityIcon_R.png, it is a binary file.
+src\assets\presskit\Hero Icons\Boris\t_Boris_AbilityIcon_RMB.png, it is a binary file.
+src\assets\presskit\Hero png's\BelicaDefault.png, it is a binary file.
+src\assets\presskit\Hero png's\Boris.png, it is a binary file.
+src\assets\presskit\Hero png's\CountessDefault.png, it is a binary file.
+src\assets\presskit\Hero png's\GideonDefault.png, it is a binary file.
+src\assets\presskit\Hero png's\GreystoneDefault.png, it is a binary file.
+src\assets\presskit\Hero png's\KhaimeraDefault.png, it is a binary file.
+src\assets\presskit\Hero png's\KwangDefault.png, it is a binary file.
+src\assets\presskit\Hero png's\MurdockDefault.png, it is a binary file.
+src\assets\presskit\Hero png's\MurielDefault.png, it is a binary file.
+src\assets\presskit\Hero png's\NarbashDefault.png, it is a binary file.
+src\assets\presskit\Hero png's\SevarogDefault.png, it is a binary file.
+src\assets\presskit\Hero png's\Sparrow.png, it is a binary file.
+src\assets\presskit\Hero png's\SteelDefault.png, it is a binary file.
+src\assets\presskit\Hero png's\TwinblastDefault.png, it is a binary file.
+src\assets\presskit\hero-portraits\default-boris.jpg, it is a binary file.
+src\assets\presskit\hero-portraits\default-gideon.jpg, it is a binary file.
+src\assets\presskit\hero-portraits\default-greystone.jpg, it is a binary file.
+src\assets\presskit\hero-portraits\default-muriel.jpg, it is a binary file.
+src\assets\presskit\hero-portraits\default-twinblast.jpg, it is a binary file.
+src\assets\presskit\hero-portraits\T_CountessDefault_Portrait.jpg, it is a binary file.
+src\assets\presskit\hero-portraits\T_KhaimeraDefault_Portrait.jpg, it is a binary file.
+src\assets\presskit\hero-portraits\T_KwangDefault_Portrait.jpg, it is a binary file.
+src\assets\presskit\hero-portraits\T_LtBelicaDefault_Portrait.jpg, it is a binary file.
+src\assets\presskit\hero-portraits\T_MurdockDefault_Portrait.jpg, it is a binary file.
+src\assets\presskit\hero-portraits\T_NarbashDefault_Portrait.jpg, it is a binary file.
+src\assets\presskit\hero-portraits\T_SevarogBloodred_Portrait.jpg, it is a binary file.
+src\assets\presskit\hero-portraits\T_SevarogDefault_Portrait.jpg, it is a binary file.
+src\assets\presskit\hero-portraits\T_SparrowDefault_Portrait.jpg, it is a binary file.
+src\assets\presskit\hero-portraits\T_SteelDefault_Portrait.jpg, it is a binary file.
+src\assets\presskit\Logos\Fault Logo - Black.png, it is a binary file.
+src\assets\presskit\Logos\Fault Logo - White.png, it is a binary file.
+src\assets\presskit\Logos\SMS Logo - Black.png, it is a binary file.
+src\assets\presskit\Logos\SMS Logo - White.png, it is a binary file.
+src\assets\presskit\Map Screenshots\Core Dusk.jpg, it is a binary file.
+src\assets\presskit\Map Screenshots\Dusk Jungle.jpg, it is a binary file.
+src\assets\presskit\Map Screenshots\FaultBG.jpg, it is a binary file.
+src\assets\presskit\Map Screenshots\Jungle 1.png, it is a binary file.
+src\assets\presskit\Map Screenshots\Jungle 2.png, it is a binary file.
+src\assets\presskit\Map Screenshots\Murdock and Jungle.png, it is a binary file.
+src\assets\step1.png, it is a binary file.
+src\components\BrowsePage.js, code is 12, comment is 0, blank is 2.
+src\components\Create.js, code is 58, comment is 0, blank is 7.
+src\components\CreateViews\CategoryView.js, code is 127, comment is 2, blank is 7.
+src\components\CreateViews\CreateGrid.js, code is 58, comment is 0, blank is 9.
+src\components\CreateViews\CreateView.js, code is 170, comment is 1, blank is 24.
+src\components\CreateViews\Details\Abilities\Abilities.js, code is 58, comment is 0, blank is 7.
+src\components\CreateViews\Details\Abilities\AbilitiesGrid.js, code is 55, comment is 0, blank is 10.
+src\components\CreateViews\Details\Abilities\AbilitiesStep.js, code is 127, comment is 2, blank is 7.
+src\components\CreateViews\Details\Abilities\AbilitiesView.js, code is 139, comment is 1, blank is 13.
+src\components\CreateViews\Details\Aspects\Aspects.js, code is 58, comment is 0, blank is 7.
+src\components\CreateViews\Details\Aspects\AspectsGrid.js, code is 55, comment is 0, blank is 10.
+src\components\CreateViews\Details\Aspects\AspectsSteps.js, code is 127, comment is 2, blank is 7.
+src\components\CreateViews\Details\Aspects\AspectsView.js, code is 135, comment is 1, blank is 16.
+src\components\CreateViews\Details\Aspects\components\AddSet.js, code is 241, comment is 1, blank is 26.
+src\components\CreateViews\Details\Aspects\components\AspectImg.js, code is 42, comment is 0, blank is 2.
+src\components\CreateViews\Details\Aspects\components\Set.js, code is 108, comment is 0, blank is 3.
+src\components\CreateViews\Details\Compatibility\Compatibility.js, code is 58, comment is 0, blank is 7.
+src\components\CreateViews\Details\Compatibility\CompatibilityGrid.js, code is 55, comment is 0, blank is 10.
+src\components\CreateViews\Details\Compatibility\CompatibilitySteps.js, code is 127, comment is 2, blank is 7.
+src\components\CreateViews\Details\Compatibility\CompatibilityView.js, code is 145, comment is 1, blank is 13.
+src\components\CreateViews\Details\Compatibility\DragDrop\Board.js, code is 24, comment is 0, blank is 5.
+src\components\CreateViews\Details\Compatibility\DragDrop\Card.js, code is 22, comment is 0, blank is 7.
+src\components\CreateViews\Details\Compatibility\HeroDragDrop\HeroDragDrop.js, code is 105, comment is 0, blank is 11.
+src\components\CreateViews\Details\Details.js, code is 58, comment is 0, blank is 7.
+src\components\CreateViews\Details\DetailsGrid.js, code is 55, comment is 0, blank is 10.
+src\components\CreateViews\Details\DetailsSteps.js, code is 127, comment is 2, blank is 7.
+src\components\CreateViews\Details\DetailsView.js, code is 321, comment is 1, blank is 34.
+src\components\CreateViews\HeroSelect\HeroSelect.js, code is 58, comment is 0, blank is 7.
+src\components\CreateViews\HeroSelect\HeroSelectGrid.js, code is 55, comment is 0, blank is 10.
+src\components\CreateViews\HeroSelect\HeroSelectView.js, code is 269, comment is 1, blank is 30.
+src\components\CreateViews\printHeroName.js, code is 33, comment is 0, blank is 14.
+src\components\CreateViews\Setup\Title.js, code is 144, comment is 0, blank is 15.
+src\components\Customize.js, code is 56, comment is 0, blank is 8.
+src\components\CustomizeViews\CustomizeCatView.js, code is 133, comment is 2, blank is 4.
+src\components\CustomizeViews\CustomizeGrid.js, code is 60, comment is 0, blank is 8.
+src\components\CustomizeViews\CustomizeView.js, code is 145, comment is 1, blank is 15.
+src\components\Display\DisplayBuild.js, code is 156, comment is 0, blank is 4.
+src\components\Display\DisplayCardBuild.js, code is 160, comment is 1, blank is 11.
+src\components\Display\DisplayListBuild.js, code is 182, comment is 0, blank is 9.
+src\components\Hero\HeroList.js, code is 99, comment is 0, blank is 2.
+src\components\HeroGrid.js, code is 48, comment is 0, blank is 8.
+src\components\HeroPage\HeroPage.js, code is 215, comment is 1, blank is 20.
+src\components\HeroPage\SidePanel.js, code is 8, comment is 0, blank is 1.
+src\components\Home.js, code is 54, comment is 0, blank is 7.
+src\components\HomeGrid.js, code is 72, comment is 0, blank is 5.
+src\components\HomeSections\ProCarousel.js, code is 40, comment is 0, blank is 16.
+src\components\HomeSections\TrendingCardSection.js, code is 40, comment is 0, blank is 14.
+src\components\Navbar.js, code is 214, comment is 1, blank is 13.
+src\components\Review.js, code is 56, comment is 0, blank is 8.
+src\components\ReviewViews\ReviewCatView.js, code is 133, comment is 2, blank is 4.
+src\components\ReviewViews\ReviewGrid.js, code is 60, comment is 0, blank is 8.
+src\components\ReviewViews\ReviewView.js, code is 143, comment is 1, blank is 15.
+src\components\StoredBuilds.js, code is 201, comment is 0, blank is 4.
+src\components\Users\UserList.js, code is 23, comment is 0, blank is 2.
+src\constants.js, code is 2, comment is 0, blank is 0.
+src\fire.js, code is 14, comment is 3, blank is 1.
+src\index.js, code is 25, comment is 3, blank is 3.
+src\logo.svg, code is 19, comment is 0, blank is 0.
+src\mockData.js, code is 148, comment is 0, blank is 0.
+src\serviceWorker.js, code is 95, comment is 31, blank is 15.
+src\setupTests.js, code is 1, comment is 4, blank is 0.
+src\Signin\Hero.js, code is 12, comment is 0, blank is 2.
+src\Signin\Login.js, code is 39, comment is 0, blank is 3.
+src\Signin\Signin.js, code is 94, comment is 0, blank is 11.
+src\Signin\style.css, code is 104, comment is 0, blank is 14.
+src\styles\index.css, code is 4, comment is 0, blank is 0.
+src\styles\Navbar.css, code is 25, comment is 0, blank is 5.
+===============================================================================
