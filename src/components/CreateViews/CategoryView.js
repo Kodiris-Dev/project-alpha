@@ -11,7 +11,7 @@ var faultBlue = '#7DBCC9';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    paddingTop: 5,
+    paddingTop: 0,
     display: 'flex',
     justifyContent: 'space-between',
   },
@@ -46,7 +46,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: 'transparent'
   },
   stepLabel: {
-    fontSize: 25,
+    fontSize: 20,
+    marginTop: 10,
     paddingRight: 5,
   },
   square: {

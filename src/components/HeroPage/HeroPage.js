@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
-import '../../styles/Heroes.css'
+
 import HeroList from '../Hero/HeroList'
 import SidePanel from './SidePanel';
 import StoredBuilds from '../StoredBuilds'
