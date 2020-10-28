@@ -8,21 +8,28 @@ import HeroList from '../Hero/HeroList'
 import SidePanel from './SidePanel';
 import StoredBuilds from '../StoredBuilds'
 import DisplayListBuild from '../Display/DisplayListBuild'
+import HeroPageImg from '../../assets/hero-page.png'
+import { useState } from 'react'
+import Build from './Build'
 
 var faultBlue = '#7DBCC9';
 const useStyles = makeStyles((theme) => ({
     root: {
-        marginTop: '0px',
-        margin: '20px',
-        marginBottom: '0px',
-        flexGrow: 1,
-        padding: '0px',
+      marginTop: '0px',
+      marginBottom: '0px',
+      flexGrow: 1,
+      padding: '0px',
+      backgroundImage: `url(${HeroPageImg})`,
+      backgroundSize: 'cover',
       },
       paper: {
         textAlign: 'center',
         color: theme.palette.text.secondary,
-        backgroundColor: 'transparent',
+        height: '98.5%',
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
         color: 'white',
+        padding: '10px',
+        paddingBottom: '0px',
       },
       sides: {
           textAlign: 'center',
@@ -102,7 +109,33 @@ const useStyles = makeStyles((theme) => ({
     }));
 
 
+
+
 export default function HeroPage({ match }) {
+
+  var [allBuilds, setAllBuilds] = useState([])
+let myData = []
+var count = [1, 2, 3]
+
+fetch('https://localhost:44388/api/builds')
+.then(builds => builds.json())
+.then(data => createBuild(data))
+
+
+function createBuild(data) {
+  setAllBuilds(allBuilds = data)
+
+
+  for(let i = 0; i < allBuilds.length; i++){
+      let id = allBuilds[i]["Id"];
+      let title = allBuilds[i]["Title"];
+      let build = new Build(id, title);
+
+      myData.push(build);
+      
+  } 
+}
+
   const classes = useStyles();
   const {
     params: { heroName }    
@@ -140,35 +173,24 @@ export default function HeroPage({ match }) {
   var rmbImg = heroObject[5]
   var rImg = heroObject[6]
 
-  console.log("Banner: " + bannerImg)
-  console.log("Hero ID: " + heroId)
-  console.log("P Img: " + pImg)
 
   /* This section displays all builds for the hero*/
-  const setStoredBuilds = (storedBuildsObj) => {
-    if (heroName == storedBuildsObj.hero) {
-      var title = storedBuildsObj.title
-      var author = storedBuildsObj.author
-      var buildBanner = storedBuildsObj.displayBanner
-      var date = storedBuildsObj.date
-      var upvotes = storedBuildsObj.upvotes
-      var patch = storedBuildsObj.patch
-      var role = storedBuildsObj.role
-
-    console.log("Build Banner: " + buildBanner)
+  const getBuilds = (build) => {
+    if (build['Hero'] === heroName) {
       return (
         <DisplayListBuild 
-        hero={heroName} 
-        title={title} 
-        author={author}
-        buildBg={buildBanner}
-        date={date}
-        upvotes={upvotes}
-        patch={patch}
-        role={role}
+        title={build['Title']}
+        author={build['Author']}
+        role={build['Role']}
+        hero={build['Hero']}
+        buildBg={build['DisplayBanner']}
+        patch={build['Patch']}
+        date={build['Date']}
         />
       )
     }
+
+
 
   }
  
@@ -219,7 +241,7 @@ export default function HeroPage({ match }) {
                           PREMIUM MEMBERSHIP
                       </div>
                     </div>
-                      { StoredBuilds.map(storedBuildsObj => setStoredBuilds(storedBuildsObj))}
+                      { allBuilds.map((obj) => getBuilds(obj)) } 
                   </div>
                   <div className={classes.contentRight}>
                       <SidePanel />

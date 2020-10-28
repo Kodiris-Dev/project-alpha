@@ -1,7 +1,7 @@
 const StoredBuilds = [
     {
         title: 'HCI',
-        author: 'Wang',
+        author: 'Baylix',
         date: '9 SEP 2020',
         hero: 'Boris',
         upvotes: 105,
@@ -15,7 +15,7 @@ const StoredBuilds = [
             item4: 'item1',
             item5: 'item1',
             item6: 'item1',
-        },        
+        },
     },
     {
         title: 'IDK',

@@ -26,6 +26,7 @@ const useStyles = makeStyles((theme) => ({
       padding: 5,
       float: 'left',
       backgroundColor: 'black',
+      marginRight: 10,
   },
   profileImg: {
       width: '90px',
@@ -82,8 +83,6 @@ const useStyles = makeStyles((theme) => ({
       paddingTop: 25,
   },
   buildItem: {
-      border: '1px solid',
-      borderColor: faultBlue,
       height: 40,
       width: 40,
   },
@@ -108,7 +107,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function DisplayListBuild(props) {
     const classes = useStyles()
-    console.log(props)
     const setUserValues = (userListObj) => {
 
         if (props.author == userListObj.userName) {
@@ -126,7 +124,7 @@ export default function DisplayListBuild(props) {
               userPic = profilePic[i]
           }
       }
-      console.log("Profile Pic Url: " + userPic)
+
     return (
         <div className={classes.displayWrapper} style={{backgroundImage: `url(${props.buildBg})`}}>
             <div className={classes.profileBox}>
