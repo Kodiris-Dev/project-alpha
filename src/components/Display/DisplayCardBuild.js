@@ -97,7 +97,6 @@ const useStyles = makeStyles({
 export default function DisplayCardBuild(props) {
     const classes = useStyles()
     console.log("props:",props)
-    props=props.build
 
     /*Setting card variables */
     var displayBanner = props.displayBanner

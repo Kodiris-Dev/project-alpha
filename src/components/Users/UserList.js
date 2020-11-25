@@ -1,7 +1,7 @@
 const UserList = [
     {
         userName: "Kodiris",
-        profilePic: "https://uploads-ssl.webflow.com/5e4eab335c128658e8a2b36e/5f3abb530306c6baf5e8f76e_thumbnail_IMG_1396.jpg",
+        profilePic: "https://uploads-ssl.webflow.com/5e4eab335c128658e8a2b36e/5fbd85ee270afa9670457224_Profile.JPG",
     },
     {
         userName: "Baylix",
@@ -19,6 +19,10 @@ const UserList = [
         userName: "Kevin",
         profilePic: "https://imageproxy.themaven.net//https%3A%2F%2Fwww.biography.com%2F.image%2FMTQzMzA3MjQ0MzI5NTEwNDcx%2Fkevin-hart_gettyimages-450909048jpg.jpg",
     },
+    {
+        userName: "TheCooch4",
+        profilePic: "https://pbs.twimg.com/profile_images/1320953687666266112/gjlyw7e9_400x400.jpg",
+    }
     
 ]
 

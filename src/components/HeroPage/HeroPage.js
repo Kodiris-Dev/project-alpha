@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-
+import { Link } from 'react-router-dom'
 
 import HeroList from '../Hero/HeroList'
 import SidePanel from './SidePanel';
@@ -11,6 +11,7 @@ import DisplayListBuild from '../Display/DisplayListBuild'
 import HeroPageImg from '../../assets/hero-page.png'
 import { useState } from 'react'
 import Build from './Build'
+
 
 var faultBlue = '#7DBCC9';
 const useStyles = makeStyles((theme) => ({
@@ -114,10 +115,10 @@ const useStyles = makeStyles((theme) => ({
 export default function HeroPage({ match }) {
 
   var [allBuilds, setAllBuilds] = useState([])
-let myData = []
-var count = [1, 2, 3]
+  let myData = []
 
-fetch('https://localhost:44388/api/builds')
+
+fetch('http://faultariaapi-devtest.us-east-1.elasticbeanstalk.com/api/builds')
 .then(builds => builds.json())
 .then(data => createBuild(data))
 
@@ -176,17 +177,35 @@ function createBuild(data) {
 
   /* This section displays all builds for the hero*/
   const getBuilds = (build) => {
+
     if (build['Hero'] === heroName) {
+      console.log("Build:",build)
+      var featured1 = 'https://api.playfault.com/imagecdn/items/' + build['Featured'][0] + '.jpg'
+      var featured2 = 'https://api.playfault.com/imagecdn/items/' + build['Featured'][1] + '.jpg'
+      var featured3 = 'https://api.playfault.com/imagecdn/items/' + build['Featured'][2] + '.jpg'
+      var featured4 = 'https://api.playfault.com/imagecdn/items/' + build['Featured'][3] + '.jpg'
+      var featured5 = 'https://api.playfault.com/imagecdn/items/' + build['Featured'][4] + '.jpg'
+      var featured6 = 'https://api.playfault.com/imagecdn/items/' + build['Featured'][5] + '.jpg'
+      var url = '/builds/' + build['Id']
       return (
-        <DisplayListBuild 
-        title={build['Title']}
-        author={build['Author']}
-        role={build['Role']}
-        hero={build['Hero']}
-        buildBg={build['DisplayBanner']}
-        patch={build['Patch']}
-        date={build['Date']}
-        />
+        <Link to={url}>
+          <DisplayListBuild 
+          title={build['Title']}
+          author={build['Author']}
+          role={build['Role']}
+          hero={build['Hero']}
+          buildBg={build['DisplayBanner']}
+          patch={build['Patch']}
+          date={build['Date']}
+          upvotes={build['Upvotes']}
+          item1={featured1}
+          item2={featured2}
+          item3={featured3}
+          item4={featured4}
+          item5={featured5}
+          item6={featured6}
+          />
+        </Link>
       )
     }
 

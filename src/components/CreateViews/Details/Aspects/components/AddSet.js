@@ -50,11 +50,9 @@ const useStyles = makeStyles((theme) => ({
   },
   contentWrapper: {
       width: '80%',
-      border: '1px solid red',
   },
   editWrapper: {
       width: '20%',
-      border: '1px solid green',
   }
 }));
 
@@ -124,7 +122,7 @@ function CreateSet(props) {
     console.log('value:', props.value)
     return (
         <div>
-            <div style={{display: 'flex'}}>
+            <div style={{display: 'flex', marginTop: 20}}>
                   <div className={classes.contentWrapper}>
                   <Set aspect1={props.value} aspect2={storedAspects2[props.id]}/>
                   </div>
@@ -228,9 +226,12 @@ function MapSet(props) {
               <div>
               <MapSet array={storedAspects1} />
               </div>
-              <button type="button" onClick={() => handleOpen()}>
-              Add New Set
-          </button>
+              <div style={{marginTop: 20}}>
+                <button type="button" onClick={() => handleOpen()}>
+                Add New Set
+                </button>
+              </div>
+
           <Modal
               open={open}
               onClose={handleClose}
@@ -250,9 +251,11 @@ function MapSet(props) {
             <div>
             <MapSet array={storedAspects1} />
             </div>
-            <button type="button" onClick={() => handleOpen()}>
-            Add New Set
-        </button>
+            <div style={{marginTop: 20}}>
+                <button type="button" onClick={() => handleOpen()}>
+                Add New Set
+                </button>
+              </div>
         <Modal
             open={open}
             onClose={handleClose}

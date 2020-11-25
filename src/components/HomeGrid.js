@@ -7,6 +7,7 @@ import HeroGrid from './HeroGrid';
 import DisplayBuild from './Display/DisplayBuild';
 import TrendingCardSection from './HomeSections/TrendingCardSection'
 import ProCarousel from './HomeSections/ProCarousel';
+import DisplayCardBuild from './Display/DisplayCardBuild';
 
 
 var faultBlue = '#7DBCC9';
@@ -39,6 +40,8 @@ const useStyles = makeStyles((theme) => ({
   },
   sectionContent: {
     marginTop: 10,
+    display: 'flex',
+    justifyContent: 'space-between'
   }
 }));
 
@@ -52,19 +55,47 @@ export default function HomeGrid() {
             <div className={classes.homeHeading}>FAULTARIA</div>
             <div className={classes.sectionHeading}>TRENDING GUIDES OF THE WEEK</div>
             <div className={classes.sectionContent}>
-              <TrendingCardSection 
-              trending1="Lentor sucks at Fault"
-              trending2="DAVE HAS NO SITUATIONAL AWARENESS"
-              trending3="The Best Guide You Will Ever Need!"
-              />
+             <DisplayCardBuild 
+             author='Kodiris'
+             date='OCT 9 2020'
+             hero='Boris'
+             displayBanner='https://uploads-ssl.webflow.com/5e4eab335c128658e8a2b36e/5f0d9a0381f476f558d3e0f5_T_BorisDefault_Portrait.jpg'
+             />
+                          <DisplayCardBuild 
+             author='Kodiris'
+             date='OCT 9 2020'
+             hero='Boris'
+             displayBanner='https://uploads-ssl.webflow.com/5e4eab335c128658e8a2b36e/5f0d9a0381f476f558d3e0f5_T_BorisDefault_Portrait.jpg'
+             />
+                          <DisplayCardBuild 
+             author='Kodiris'
+             date='OCT 9 2020'
+             hero='Boris'
+             displayBanner='https://uploads-ssl.webflow.com/5e4eab335c128658e8a2b36e/5f0d9a0381f476f558d3e0f5_T_BorisDefault_Portrait.jpg'
+             />
+             
             </div>
             <div className={classes.sectionHeading}>PRO GUIDES</div>
             <div className={classes.sectionContent}>
-              <ProCarousel 
-              trending1="Trending Test"
-              trending2="DAVE HAS NO SITUATIONAL AWARENESS"
-              trending3="The Best Guide You Will Ever Need!"
-              />
+            <DisplayCardBuild 
+             author='Kodiris'
+             date='OCT 9 2020'
+             hero='Boris'
+             displayBanner='https://uploads-ssl.webflow.com/5e4eab335c128658e8a2b36e/5f0d9a0381f476f558d3e0f5_T_BorisDefault_Portrait.jpg'
+             />
+                          <DisplayCardBuild 
+             author='Kodiris'
+             date='OCT 9 2020'
+             hero='Boris'
+             displayBanner='https://uploads-ssl.webflow.com/5e4eab335c128658e8a2b36e/5f0d9a0381f476f558d3e0f5_T_BorisDefault_Portrait.jpg'
+             />
+                          <DisplayCardBuild 
+             author='Kodiris'
+             date='OCT 9 2020'
+             hero='Boris'
+             displayBanner='https://uploads-ssl.webflow.com/5e4eab335c128658e8a2b36e/5f0d9a0381f476f558d3e0f5_T_BorisDefault_Portrait.jpg'
+             />
+             
             </div>
           </Paper>
         </Grid>

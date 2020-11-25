@@ -10,7 +10,6 @@ const useStyles = makeStyles((theme) => ({
     wrapper: {
         width: '100%',
         display: 'flex',
-        marginTop: 20,
     },
     left: {
         width: '30%',

@@ -183,7 +183,10 @@ export default function PrimarySearchAppBar() {
           <NavLink to={"/browse"} exact className="navlink" exact activeClassName="activeLink">BROWSE</NavLink>
           </Typography>
           <Typography noWrap>
-          <NavLink to={"/faultfire/statcalculator"} exact className="navlink" exact activeClassName="activeLink">STAT CALCULATOR</NavLink>
+          <NavLink to={"/heroes"} exact className="navlink" exact activeClassName="activeLink">HEROES</NavLink>
+          </Typography>
+          <Typography noWrap>
+          <NavLink to={"/postbuilds"} exact className="navlink" exact activeClassName="activeLink">CREATE BUILD</NavLink>
           </Typography>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
