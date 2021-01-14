@@ -129,10 +129,9 @@ activeHero: {
   borderColor: faultBlue
 },
 footer: {
-  position: 'absolute',
-  bottom: 0,
-  width: '57.5%',
-  marginBottom: 30,
+  position: 'relative',
+  paddingTop: 125,
+  marginBottom: 10,
 },
 infoWrapper: {
 },
