@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
 
   footer: {
     position: 'relative',
-    paddingTop: 125,
+    paddingTop: 50,
     marginBottom: 10,
   },
 setWrapper: {

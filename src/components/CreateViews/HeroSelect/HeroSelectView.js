@@ -130,7 +130,7 @@ activeHero: {
 },
 footer: {
   position: 'relative',
-  paddingTop: 125,
+  paddingTop: 25,
   marginBottom: 10,
 },
 infoWrapper: {

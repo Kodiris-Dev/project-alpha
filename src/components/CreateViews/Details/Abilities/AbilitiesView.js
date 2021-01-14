@@ -125,6 +125,7 @@ setWrapper: {
             }}>
               <div style={{width: '100%'}}>
                   <div>Abilities Component</div>
+            </div>  
             </div>
             <div className={classes.footer}>
               <div style={{display: 'flex', justifyContent: 'space-between', marginTop: '30px'}}>
@@ -143,8 +144,7 @@ setWrapper: {
                   </Link>
                 </div>   
               </div>
-            </div>   
-            </div>   
+            </div>    
       </div>       
   );
 }
