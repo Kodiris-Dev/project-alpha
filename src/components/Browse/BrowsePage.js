@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
       },
   }));
 
-function BrowsePage() {
+export default function BrowsePage() {
     const classes = useStyles();
     return (
         <div className={classes.root}>
@@ -57,5 +57,3 @@ function BrowsePage() {
         </div>
     )
 }
-
-export default BrowsePage

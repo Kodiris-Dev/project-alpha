@@ -159,8 +159,7 @@ const useStyles = makeStyles((theme) => ({
     introductionText: {
       marginTop: 20,
       marginBottom: 20,
-      border: '1px solid yellow',
-      padding: '10px 50px 10px 50px'
+      padding: '10px 100px 10px 100px'
     },
     square: {
       //To make Square Shape
@@ -206,6 +205,7 @@ abilityImage: {
     }));
 
 
+    
     function TabPanel(props) {
       const { children, value, index, ...other } = props;
     
@@ -300,6 +300,8 @@ export default function BuildPage({ match }) {
   var author = ''
   var hero = ''
   var displayBanner = ''
+  var itemSetsArray = []
+  var introText = ''
 
 
   fetch('http://faultariaapi-devtest.us-east-1.elasticbeanstalk.com/api/builds')
@@ -317,6 +319,8 @@ export default function BuildPage({ match }) {
           title = allBuilds[i]['Title']
           hero = allBuilds[i]['Hero']
           displayBanner = allBuilds[i]['DisplayBanner']
+          itemSetsArray = allBuilds[i]['Featured']
+          introText = allBuilds[i]['IntroText']
       }
   }
 
@@ -339,7 +343,41 @@ export default function BuildPage({ match }) {
       }
   }
 
-
+  //Get Item Sets
+  function getItemSets() {
+    console.log(itemSetsArray)
+    return (
+      <div style={{marginTop: 20}}>
+                  <Accordion style={{color: 'white', backgroundColor: 'transparent', borderBottom: '1px solid', borderColor: faultBlue}}>
+                    <AccordionSummary
+                      expandIcon={<ExpandMoreIcon />}
+                      aria-controls="panel1a-content"
+                      id="panel1a-header"
+                    >
+                      <Typography className={classes.heading}>
+                        <div>
+                        <div style={{textAlign: 'left'}}>TITLE 1</div>
+                          <div className={classes.roleWrapper} style={{display: 'flex', justifyContent: 'space-between', marginTop: 10}}>
+                              <div className={classes.roleIcon} style={{backgroundImage: `url(${item1})`}}></div>
+                              <div className={classes.roleIcon} style={{backgroundImage: `url(${item2})`}}></div>
+                              <div className={classes.roleIcon} style={{backgroundImage: `url(${item3})`}}></div>
+                              <div className={classes.roleIcon} style={{backgroundImage: `url(${item4})`}}></div>
+                              <div className={classes.roleIcon} style={{backgroundImage: `url(${item5})`}}></div>
+                              <div className={classes.roleIcon} style={{backgroundImage: `url(${item6})`}}></div>
+                          </div>
+                        </div>
+                      </Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      <Typography>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                        sit amet blandit leo lobortis eget.
+                      </Typography>
+                    </AccordionDetails>
+                  </Accordion>
+              </div>
+    )
+  }
   
     //GET HERO IMAGES
       var abilityStr = "https://api.playfault.com/imagecdn/abilities/"
@@ -373,13 +411,12 @@ export default function BuildPage({ match }) {
                 </div>
               </div>
               <div style={{marginTop: 20, fontSize: 24}}>INTRODUCTION</div>
-                  <div className={classes.introductionText}>User's intro here . . . blah blah blah play countess or w/e like why not she pretty gas. 
-                        Look there are more words! I wanted to fill the space up a bit so I decided that I should do a bit of typing. Like, why not just add some more stuff in here, I know it doesn't make any sense but does that matter? NO! Why? I have no idea, but I do like this big ole boris in the background, cause why not.
+                  <div className={classes.introductionText}>{introText}
                   </div>
               <div className={classes.contentWrapper}>
               <Grid item xs={12} sm={10} md={4}>
                 <Paper className={classes.columnPaper}>
-                  <div>ROLE</div>
+                  <div style={{fontSize: 24}}>ROLE</div>
                   <div className={classes.roleWrapper} style={{display: 'flex', justifyContent: 'space-between', marginTop: 20, marginBottom: 20}}>
                     <div className={classes.roleIcon} style={{backgroundImage: `url(${JungleIcon})`}}></div>
                     <div className={classes.roleIcon} style={{backgroundImage: `url(${CarryIcon})`}}></div>
@@ -387,42 +424,14 @@ export default function BuildPage({ match }) {
                     <div className={classes.roleIcon} style={{backgroundImage: `url(${SupportIcon})`}}></div>
                     <div className={classes.roleIcon} style={{backgroundImage: `url(${SoloIcon})`}}></div>
                   </div>
-                  <div>ASPECTS</div>
+                  <div style={{fontSize: 24}}>ASPECTS</div>
                   <TabsWrappedLabel />
                 </Paper>
               </Grid>
               <Grid item xs={12} sm={10} md={4}>
                 <Paper className={classes.columnPaper}>
-                <div>ITEMS</div>
-                <div style={{marginTop: 20}}>
-                    <Accordion style={{color: 'white', backgroundColor: 'transparent', borderBottom: '1px solid', borderColor: faultBlue}}>
-                      <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
-                      >
-                        <Typography className={classes.heading}>
-                          <div>
-                          <div style={{textAlign: 'left'}}>TITLE 1</div>
-                            <div className={classes.roleWrapper} style={{display: 'flex', justifyContent: 'space-between', marginTop: 10}}>
-                                <div className={classes.roleIcon} style={{backgroundImage: `url(${item1})`}}></div>
-                                <div className={classes.roleIcon} style={{backgroundImage: `url(${item2})`}}></div>
-                                <div className={classes.roleIcon} style={{backgroundImage: `url(${item3})`}}></div>
-                                <div className={classes.roleIcon} style={{backgroundImage: `url(${item4})`}}></div>
-                                <div className={classes.roleIcon} style={{backgroundImage: `url(${item5})`}}></div>
-                                <div className={classes.roleIcon} style={{backgroundImage: `url(${item6})`}}></div>
-                            </div>
-                          </div>
-                        </Typography>
-                      </AccordionSummary>
-                      <AccordionDetails>
-                        <Typography>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                          sit amet blandit leo lobortis eget.
-                        </Typography>
-                      </AccordionDetails>
-                    </Accordion>
-                </div>
+                <div style={{fontSize: 24}}>ITEMS</div>
+                 { getItemSets() }
 
                 <div style={{marginTop: 20}}>
                     <Accordion style={{color: 'white', backgroundColor: 'transparent', borderBottom: '1px solid', borderColor: faultBlue}}>
@@ -546,6 +555,7 @@ export default function BuildPage({ match }) {
               </Grid>
               <Grid item xs={12} sm={10} md={4}>
                 <Paper className={classes.columnPaper}>
+                <div style={{fontSize: 24, marginBottom: 40}}>ABILITY ORDER</div>
                   <div style={{display: 'flex', justifyContent: 'center'}}>
                     <div style={{display: 'flex', flexDirection: 'column'}}>
                       <div className={classes.square}>
@@ -953,7 +963,7 @@ export default function BuildPage({ match }) {
               </Grid>
               
               </div>
-              <div style={{marginTop: 20}}>COMPATIBILITY</div>
+              <div style={{marginTop: 20, fontSize: 24}}>COMPATIBILITY</div>
                 <div style={{display: 'flex', paddingBottom: 20, justifyContent: 'space-between'}}>
                   <div style={{width: '45%'}}>
                     <div>THREATS</div>

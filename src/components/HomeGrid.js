@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     textAlign: 'center',
     color: theme.palette.text.secondary,
+    border: '1px solid green'
   },
   middle: {
     padding: theme.spacing(2),
@@ -30,7 +31,6 @@ const useStyles = makeStyles((theme) => ({
     color: 'white',
   },
   homeHeading: {
-    borderBottom: '1px solid white',
     fontSize: '24px',
     paddingBottom: 10,
   },
@@ -41,7 +41,8 @@ const useStyles = makeStyles((theme) => ({
   sectionContent: {
     marginTop: 10,
     display: 'flex',
-    justifyContent: 'space-between'
+    justifyContent: 'center',
+    border: '1px solid yellow'
   }
 }));
 
@@ -53,48 +54,39 @@ export default function HomeGrid() {
         <Grid item xs={12} sm={12} md={6} lg={9}>
           <Paper className={classes.middle}>
             <div className={classes.homeHeading}>FAULTARIA</div>
-            <div className={classes.sectionHeading}>TRENDING GUIDES OF THE WEEK</div>
+            <div style={{border: '1px solid red'}}>Test</div>
+            <div className={classes.sectionHeading}>TOP VOTED GUIDES</div>
             <div className={classes.sectionContent}>
-             <DisplayCardBuild 
-             author='Kodiris'
-             date='OCT 9 2020'
-             hero='Boris'
-             displayBanner='https://uploads-ssl.webflow.com/5e4eab335c128658e8a2b36e/5f0d9a0381f476f558d3e0f5_T_BorisDefault_Portrait.jpg'
-             />
-                          <DisplayCardBuild 
-             author='Kodiris'
-             date='OCT 9 2020'
-             hero='Boris'
-             displayBanner='https://uploads-ssl.webflow.com/5e4eab335c128658e8a2b36e/5f0d9a0381f476f558d3e0f5_T_BorisDefault_Portrait.jpg'
-             />
-                          <DisplayCardBuild 
-             author='Kodiris'
-             date='OCT 9 2020'
-             hero='Boris'
-             displayBanner='https://uploads-ssl.webflow.com/5e4eab335c128658e8a2b36e/5f0d9a0381f476f558d3e0f5_T_BorisDefault_Portrait.jpg'
-             />
-             
-            </div>
-            <div className={classes.sectionHeading}>PRO GUIDES</div>
-            <div className={classes.sectionContent}>
-            <DisplayCardBuild 
-             author='Kodiris'
-             date='OCT 9 2020'
-             hero='Boris'
-             displayBanner='https://uploads-ssl.webflow.com/5e4eab335c128658e8a2b36e/5f0d9a0381f476f558d3e0f5_T_BorisDefault_Portrait.jpg'
-             />
-                          <DisplayCardBuild 
-             author='Kodiris'
-             date='OCT 9 2020'
-             hero='Boris'
-             displayBanner='https://uploads-ssl.webflow.com/5e4eab335c128658e8a2b36e/5f0d9a0381f476f558d3e0f5_T_BorisDefault_Portrait.jpg'
-             />
-                          <DisplayCardBuild 
-             author='Kodiris'
-             date='OCT 9 2020'
-             hero='Boris'
-             displayBanner='https://uploads-ssl.webflow.com/5e4eab335c128658e8a2b36e/5f0d9a0381f476f558d3e0f5_T_BorisDefault_Portrait.jpg'
-             />
+            <Grid item xs={12} sm={12} md={4}>
+              <Paper className={classes.paper}>
+                <DisplayCardBuild 
+                  author='Kodiris'
+                  date='OCT 9 2020'
+                  hero='Boris'
+                  displayBanner='https://uploads-ssl.webflow.com/5e4eab335c128658e8a2b36e/5f0d9a0381f476f558d3e0f5_T_BorisDefault_Portrait.jpg'
+                />
+             </Paper>
+            </Grid>
+            <Grid item xs={12} sm={12} md={4}>
+              <Paper className={classes.paper}>
+                <DisplayCardBuild 
+                  author='Kodiris'
+                  date='OCT 9 2020'
+                  hero='Boris'
+                  displayBanner='https://uploads-ssl.webflow.com/5e4eab335c128658e8a2b36e/5f0d9a0381f476f558d3e0f5_T_BorisDefault_Portrait.jpg'
+                />
+             </Paper>
+            </Grid>
+            <Grid item xs={12} sm={12} md={4}>
+              <Paper className={classes.paper}>
+                <DisplayCardBuild 
+                  author='Kodiris'
+                  date='OCT 9 2020'
+                  hero='Boris'
+                  displayBanner='https://uploads-ssl.webflow.com/5e4eab335c128658e8a2b36e/5f0d9a0381f476f558d3e0f5_T_BorisDefault_Portrait.jpg'
+                />
+             </Paper>
+            </Grid>
              
             </div>
           </Paper>

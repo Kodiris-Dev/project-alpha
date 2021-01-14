@@ -22,6 +22,10 @@ const UserList = [
     {
         userName: "TheCooch4",
         profilePic: "https://pbs.twimg.com/profile_images/1320953687666266112/gjlyw7e9_400x400.jpg",
+    },
+    {
+        userName: "SpyderByte",
+        profilePic: "https://pbs.twimg.com/profile_images/1328457030470955010/dRQS3dGS_400x400.jpg",
     }
     
 ]

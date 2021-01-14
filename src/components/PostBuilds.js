@@ -27,6 +27,7 @@ function createBuild() {
     let id = document.getElementById('id').value
     let role = document.getElementById('role').value
     let displayBanner = document.getElementById('displayBanner').value
+    let introText = document.getElementById('introText').value
     var build = {
         Title: title,
         Author: author,
@@ -37,7 +38,8 @@ function createBuild() {
         Patch: patch,
         Role: role,
         DisplayBanner: displayBanner,
-        Featured: []
+        Featured: [],
+        IntroText: introText
     }
     let myData = JSON.stringify(build)
     console.log('MyData:', myData)
@@ -82,6 +84,7 @@ export default function PostBuilds() {
                 <TextField id="patch" label="Patch" color='white'/>
                 <TextField id="role" label="Role" color='white'/>
                 <TextField id="displayBanner" label="DisplayBanner" color='white'/>
+                <TextField id="introText" label="Intro Text" color='white'/>
                 <Button onClick={() => createBuild()} style = {{marginTop: 20}} variant="contained" color="secondary">
                     Create Build
                 </Button>
