@@ -46,12 +46,11 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: 'wrap',
   },
 
-footer: {
-  position: 'absolute',
-  bottom: 0,
-  width: '57.5%',
-  marginBottom: 30,
-},
+  footer: {
+    position: 'relative',
+    paddingTop: 125,
+    marginBottom: 10,
+  },
 setWrapper: {
   width: '100%',
 },
