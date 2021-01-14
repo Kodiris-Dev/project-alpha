@@ -77,10 +77,9 @@ const useStyles = makeStyles((theme) => ({
   },
 
 footer: {
-  position: 'absolute',
-  bottom: 0,
-  width: '57.5%',
-  marginBottom: 30,
+  position: 'relative',
+  paddingTop: 125,
+  marginBottom: 10,
 },
 roleWrapper: {
   height: 275,
@@ -105,7 +104,9 @@ roleImg: {
   backgroundPosition: 'center',
 },
 filterWrapper: {
-  backdropFilter: 'opacity(20%)',
+  transition: '.5s',
+  transitionTimingFunction: 'ease',
+  opacity: '.5',
   width: '100%',
   height: '100%',
   display: 'flex',
@@ -115,11 +116,11 @@ filterWrapper: {
   cursor: 'pointer',
 
   "&:hover": {
-    backdropFilter: 'opacity(100%)',
+    opacity: '1',
   },
 },
 filterWrapperSelected: {
-  backdropFilter: 'opacity(100%)',
+  opacity: '1',
   width: '100%',
   height: '100%',
   display: 'flex',
@@ -330,7 +331,6 @@ function DetailsView() {
                     },
                   }}
                   />
-            </div>
             <div className={classes.footer}>
               <div style={{display: 'flex', justifyContent: 'space-between', marginTop: '30px'}}>
               <div>
@@ -348,7 +348,8 @@ function DetailsView() {
                   </Link>
                 </div>   
               </div>
-            </div>   
+            </div> 
+            </div>  
       </div>       
   );
 }
