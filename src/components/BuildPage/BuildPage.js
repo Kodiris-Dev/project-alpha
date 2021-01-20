@@ -240,9 +240,9 @@ abilityImage: {
     }
     
     
-    function TabsWrappedLabel() {
+    function TabsWrappedLabel(props) {
       const [value, setValue] = React.useState('one');
-    
+      var aspectArray = props.aspects
       const handleChange = (event, newValue) => {
         setValue(newValue);
       };
@@ -262,8 +262,8 @@ abilityImage: {
           </AppBar>
           <TabPanel value={value} index="one">
                   <div style={{display: 'flex', justifyContent: 'center', marginBottom: 20}}>
-                    <AspectImg name="King"/>
-                    <AspectImg name="Ace"/>
+                    <AspectImg name={aspectArray[0]}/>
+                    <AspectImg name={aspectArray[1]}/>
                   </div>
                   Aspect Description. . . blah blah blah play countess or w/e like why not she pretty gas. 
 Look there are more words! I wanted to fill the space up a bit so I decided that I should do a bit of typing. Like, why not just add some more stuff in here, I know it doesn't make any sense but does that matter? NO! Why? I have no idea, but I do like this big ole boris in the background, cause why not.
@@ -302,6 +302,9 @@ export default function BuildPage({ match }) {
   var displayBanner = ''
   var itemSetsArray = []
   var introText = ''
+  var aspects = []
+  var items = []
+  var role = ''
 
 
   fetch('http://faultariaapi-devtest.us-east-1.elasticbeanstalk.com/api/builds')
@@ -321,6 +324,9 @@ export default function BuildPage({ match }) {
           displayBanner = allBuilds[i]['DisplayBanner']
           itemSetsArray = allBuilds[i]['Featured']
           introText = allBuilds[i]['IntroText']
+          aspects = allBuilds[i]['Aspects']
+          items = allBuilds[i]['Items']
+          role = allBuilds[i]['Role']
       }
   }
 
@@ -345,7 +351,19 @@ export default function BuildPage({ match }) {
 
   //Get Item Sets
   function getItemSets() {
-    console.log(itemSetsArray)
+    var itemStr = 'https://api.playfault.com/imagecdn/items/'
+    var itemStrArray = []
+    var itemSrc = ''
+    for (var i in items) {
+      itemSrc = itemStr + items[i] + '.jpg'
+      itemStrArray.push(itemSrc)
+    }
+
+    const getItemStrings = (item) =>  {
+      return (
+        <div className={classes.roleIcon} style={{backgroundImage: `url(${item})`}}></div>
+      )
+    }
     return (
       <div style={{marginTop: 20}}>
                   <Accordion style={{color: 'white', backgroundColor: 'transparent', borderBottom: '1px solid', borderColor: faultBlue}}>
@@ -356,14 +374,10 @@ export default function BuildPage({ match }) {
                     >
                       <Typography className={classes.heading}>
                         <div>
-                        <div style={{textAlign: 'left'}}>TITLE 1</div>
+                        <div style={{textAlign: 'left'}}>SET 1</div>
                           <div className={classes.roleWrapper} style={{display: 'flex', justifyContent: 'space-between', marginTop: 10}}>
-                              <div className={classes.roleIcon} style={{backgroundImage: `url(${item1})`}}></div>
-                              <div className={classes.roleIcon} style={{backgroundImage: `url(${item2})`}}></div>
-                              <div className={classes.roleIcon} style={{backgroundImage: `url(${item3})`}}></div>
-                              <div className={classes.roleIcon} style={{backgroundImage: `url(${item4})`}}></div>
-                              <div className={classes.roleIcon} style={{backgroundImage: `url(${item5})`}}></div>
-                              <div className={classes.roleIcon} style={{backgroundImage: `url(${item6})`}}></div>
+                              { itemStrArray.map((obj) => getItemStrings(obj)) } 
+
                           </div>
                         </div>
                       </Typography>
@@ -387,7 +401,6 @@ export default function BuildPage({ match }) {
       var eImg = abilityStr + "/E.png"
       var rmbImg = abilityStr + "/RMB.png"
       var rImg = abilityStr + "/R.png"
-      console.log(qImg)
 
 
 
@@ -425,7 +438,7 @@ export default function BuildPage({ match }) {
                     <div className={classes.roleIcon} style={{backgroundImage: `url(${SoloIcon})`}}></div>
                   </div>
                   <div style={{fontSize: 24}}>ASPECTS</div>
-                  <TabsWrappedLabel />
+                  <TabsWrappedLabel aspects={aspects}/>
                 </Paper>
               </Grid>
               <Grid item xs={12} sm={10} md={4}>

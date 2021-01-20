@@ -305,7 +305,7 @@ function createBuild(data) {
 }
   /* This section displays all builds*/
   const getBuilds = (build) => {
-      console.log("Build:",build)
+      console.log("Build:",build['Id'])
       var featured1 = 'https://api.playfault.com/imagecdn/items/' + build['Featured'][0] + '.jpg'
       var featured2 = 'https://api.playfault.com/imagecdn/items/' + build['Featured'][1] + '.jpg'
       var featured3 = 'https://api.playfault.com/imagecdn/items/' + build['Featured'][2] + '.jpg'
