@@ -5,6 +5,7 @@ import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import Chip from '@material-ui/core/Chip';
 import UserList from '../Users/UserList'
+import FavoriteIcon from '@material-ui/icons/Favorite';
 
 
 var faultBlue = '#7DBCC9';
@@ -26,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
       padding: 5,
       float: 'left',
       backgroundColor: 'black',
+      marginRight: 10,
   },
   profileImg: {
       width: '90px',
@@ -82,8 +84,6 @@ const useStyles = makeStyles((theme) => ({
       paddingTop: 25,
   },
   buildItem: {
-      border: '1px solid',
-      borderColor: faultBlue,
       height: 40,
       width: 40,
   },
@@ -108,7 +108,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function DisplayListBuild(props) {
     const classes = useStyles()
-    console.log(props)
     const setUserValues = (userListObj) => {
 
         if (props.author == userListObj.userName) {
@@ -126,7 +125,7 @@ export default function DisplayListBuild(props) {
               userPic = profilePic[i]
           }
       }
-      console.log("Profile Pic Url: " + userPic)
+
     return (
         <div className={classes.displayWrapper} style={{backgroundImage: `url(${props.buildBg})`}}>
             <div className={classes.profileBox}>
@@ -157,24 +156,24 @@ export default function DisplayListBuild(props) {
             <div style={{display: 'flex', flexFlow: 'column'}}>
                 <div className={classes.itemBar}>
                     <div className={classes.buildItem}>
-                        <img className={classes.itemImage}src="https://pbs.twimg.com/media/EhLk9BvWkAEcJVC?format=jpg&name=medium"></img>
+                        <img className={classes.itemImage}src={props.item1}></img>
                     </div>
                     <div className={classes.buildItem}>
-                        <img className={classes.itemImage}src="https://pbs.twimg.com/media/Eg1_fuWXkAAdOGG?format=jpg&name=medium"></img>
+                        <img className={classes.itemImage}src={props.item2}></img>
                     </div>
                     <div className={classes.buildItem}>
-                        <img className={classes.itemImage}src="https://pbs.twimg.com/media/EgruBPSXsAAa3pl?format=jpg&name=medium"></img>
+                        <img className={classes.itemImage}src={props.item3}></img>
                     </div>
                 </div>
                 <div className={classes.itemBar}>
                     <div className={classes.buildItem}>
-                        <img className={classes.itemImage}src="https://pbs.twimg.com/media/EghXFLeU8AAsIdB?format=jpg&name=medium"></img>
+                        <img className={classes.itemImage}src={props.item4}></img>
                     </div>
                     <div className={classes.buildItem}>
-                        <img className={classes.itemImage}src="https://pbs.twimg.com/media/EhBc8V2WoAEd66Z?format=jpg&name=medium"></img>
+                        <img className={classes.itemImage}src={props.item5}></img>
                     </div>
                     <div className={classes.buildItem}>
-                        <img className={classes.itemImage}src="https://pbs.twimg.com/media/EhLk9BvWkAEcJVC?format=jpg&name=medium"></img>
+                        <img className={classes.itemImage}src={props.item6}></img>
                     </div>
                 </div>
             </div>

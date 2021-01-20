@@ -14,7 +14,7 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
-
+import { Link } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 import '../styles/Navbar.css';
 
@@ -120,8 +120,10 @@ export default function PrimarySearchAppBar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+      <Link to='/signin' style={{color: 'black'}}>
+       <MenuItem onClick={handleMenuClose}>Sign In</MenuItem>
+      </Link>
+
     </Menu>
   );
 
@@ -172,7 +174,7 @@ export default function PrimarySearchAppBar() {
         <Toolbar>
           <img className="fhn-nav-logo" src="https://uploads-ssl.webflow.com/5e4dd70c09d48fd33df2de2f/5f56e625192d6f7419894cd2_FHN_White.svg"></img>
           <Typography noWrap>
-          <NavLink style={{borderLeft: "1px #7DBCC9 solid"}} to={"/"} exact className="navlink" exact activeClassName="activeLink">FAULTFIRE</NavLink>
+          <NavLink style={{borderLeft: "1px #7DBCC9 solid"}} to={"/"} exact className="navlink" exact activeClassName="activeLink">FAULTARIA</NavLink>
           </Typography>
           <Typography noWrap>
           <NavLink to={"/create"} exact className="navlink" exact activeClassName="activeLink">CREATE</NavLink>
@@ -181,7 +183,10 @@ export default function PrimarySearchAppBar() {
           <NavLink to={"/browse"} exact className="navlink" exact activeClassName="activeLink">BROWSE</NavLink>
           </Typography>
           <Typography noWrap>
-          <NavLink to={"/faultfire/statcalculator"} exact className="navlink" exact activeClassName="activeLink">STAT CALCULATOR</NavLink>
+          <NavLink to={"/heroes"} exact className="navlink" exact activeClassName="activeLink">HEROES</NavLink>
+          </Typography>
+          <Typography noWrap>
+          <NavLink to={"/postbuilds"} exact className="navlink" exact activeClassName="activeLink">CREATE BUILD</NavLink>
           </Typography>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>

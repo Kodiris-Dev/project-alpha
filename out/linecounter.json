@@ -1,0 +1,1866 @@
+{
+    "extension": "linecounter",
+    "version": "0.2.7",
+    "workspace": "c:\\Users\\aruiz68\\Documents\\GitHub\\project-alpha",
+    "linecount": [
+        {
+            "version": "0.2.7",
+            "counttime": "2020-10-23 12:24:35",
+            "filesum": 271,
+            "codesum": 21856,
+            "commentsum": 296,
+            "blanksum": 658,
+            "statistics": {
+                "": {
+                    "code": 24,
+                    "comment": 1,
+                    "blank": 5
+                },
+                ".json": {
+                    "code": 15335,
+                    "comment": 0,
+                    "blank": 4
+                },
+                ".svg": {
+                    "code": 141,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".js": {
+                    "code": 6080,
+                    "comment": 89,
+                    "blank": 585
+                },
+                ".md": {
+                    "code": 37,
+                    "comment": 12,
+                    "blank": 31
+                },
+                ".html": {
+                    "code": 22,
+                    "comment": 23,
+                    "blank": 1
+                },
+                ".txt": {
+                    "code": 6,
+                    "comment": 170,
+                    "blank": 13
+                },
+                ".css": {
+                    "code": 134,
+                    "comment": 1,
+                    "blank": 19
+                },
+                ".map": {
+                    "code": 4,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".cache": {
+                    "code": 73,
+                    "comment": 0,
+                    "blank": 0
+                }
+            },
+            "filelist": [
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".env"
+                },
+                {
+                    "blank": 0,
+                    "code": 73,
+                    "comment": 0,
+                    "filename": ".firebase\\hosting.YnVpbGQ.cache"
+                },
+                {
+                    "blank": 0,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": ".firebaserc"
+                },
+                {
+                    "blank": 5,
+                    "code": 18,
+                    "comment": 1,
+                    "filename": ".gitignore"
+                },
+                {
+                    "blank": 1,
+                    "code": 31,
+                    "comment": 0,
+                    "filename": "build\\asset-manifest.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "build\\assets\\fhn.svg"
+                },
+                {
+                    "filename": "build\\assets\\norweginator.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Banners\\Dawn Banner.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Banners\\Dusk Banner.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Banners\\OP BW Banner.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Banners\\OP Purple Banner.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Banners\\Red Buff Banner.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Hero Icons\\Boris\\t_Boris_AbilityIcon_E.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Hero Icons\\Boris\\t_Boris_AbilityIcon_LMB.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Hero Icons\\Boris\\t_Boris_AbilityIcon_P.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Hero Icons\\Boris\\t_Boris_AbilityIcon_Q.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Hero Icons\\Boris\\t_Boris_AbilityIcon_R.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Hero Icons\\Boris\\t_Boris_AbilityIcon_RMB.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Hero png's\\BelicaDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Hero png's\\Boris.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Hero png's\\CountessDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Hero png's\\GideonDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Hero png's\\GreystoneDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Hero png's\\KhaimeraDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Hero png's\\KwangDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Hero png's\\MurdockDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Hero png's\\MurielDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Hero png's\\NarbashDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Hero png's\\SevarogDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Hero png's\\Sparrow.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Hero png's\\SteelDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Hero png's\\TwinblastDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\hero-portraits\\default-boris.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\hero-portraits\\default-twinblast.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\hero-portraits\\T_CountessDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\hero-portraits\\T_GideonDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\hero-portraits\\T_GreystoneDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\hero-portraits\\T_KhaimeraDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\hero-portraits\\T_KwangDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\hero-portraits\\T_LtBelicaDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\hero-portraits\\T_MurdockDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\hero-portraits\\T_MurielDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\hero-portraits\\T_NarbashDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\hero-portraits\\T_SevarogBloodred_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\hero-portraits\\T_SevarogDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\hero-portraits\\T_SparrowDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\hero-portraits\\T_SteelDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Logos\\Fault Logo - Black.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Logos\\Fault Logo - White.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Logos\\SMS Logo - Black.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Logos\\SMS Logo - White.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Map Screenshots\\Core Dusk.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Map Screenshots\\Dusk Jungle.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Map Screenshots\\FaultBG.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Map Screenshots\\Jungle 1.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Map Screenshots\\Jungle 2.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\assets\\presskit\\Map Screenshots\\Murdock and Jungle.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\favicon.ico",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "build\\index.html"
+                },
+                {
+                    "filename": "build\\logo192.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\logo512.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 25,
+                    "comment": 0,
+                    "filename": "build\\manifest.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 66,
+                    "comment": 0,
+                    "filename": "build\\precache-manifest.2628d4fb8cb33eff260f5b54a647eb82.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "build\\robots.txt"
+                },
+                {
+                    "blank": 8,
+                    "code": 14,
+                    "comment": 17,
+                    "filename": "build\\service-worker.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "build\\static\\css\\main.c859e9ca.chunk.css"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "build\\static\\css\\main.c859e9ca.chunk.css.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 3,
+                    "filename": "build\\static\\js\\2.90fdca82.chunk.js"
+                },
+                {
+                    "blank": 13,
+                    "code": 0,
+                    "comment": 168,
+                    "filename": "build\\static\\js\\2.90fdca82.chunk.js.LICENSE.txt"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "build\\static\\js\\2.90fdca82.chunk.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "build\\static\\js\\main.2c49393e.chunk.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "build\\static\\js\\main.2c49393e.chunk.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "build\\static\\js\\runtime-main.1c47a842.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "build\\static\\js\\runtime-main.1c47a842.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 38,
+                    "comment": 0,
+                    "filename": "build\\static\\media\\agenda.2056da54.svg"
+                },
+                {
+                    "filename": "build\\static\\media\\default-boris.7fe13b50.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\static\\media\\default-gideon.86b829e8.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\static\\media\\default-greystone.a4f45cc2.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\static\\media\\default-muriel.b89f0d44.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\static\\media\\default-twinblast.8f38b733.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\static\\media\\details-aspects.7a6dc2c2.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build\\static\\media\\details-intro.ca4daf49.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "build\\static\\media\\handyman-tools.b4d0b582.svg"
+                },
+                {
+                    "filename": "build\\static\\media\\step1.c26d2f74.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 1,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "firebase.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 15190,
+                    "comment": 0,
+                    "filename": "package-lock.json"
+                },
+                {
+                    "blank": 2,
+                    "code": 49,
+                    "comment": 0,
+                    "filename": "package.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "public\\assets\\fhn.svg"
+                },
+                {
+                    "filename": "public\\assets\\norweginator.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Banners\\Dawn Banner.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Banners\\Dusk Banner.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Banners\\OP BW Banner.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Banners\\OP Purple Banner.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Banners\\Red Buff Banner.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Hero Icons\\Boris\\t_Boris_AbilityIcon_E.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Hero Icons\\Boris\\t_Boris_AbilityIcon_LMB.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Hero Icons\\Boris\\t_Boris_AbilityIcon_P.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Hero Icons\\Boris\\t_Boris_AbilityIcon_Q.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Hero Icons\\Boris\\t_Boris_AbilityIcon_R.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Hero Icons\\Boris\\t_Boris_AbilityIcon_RMB.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Hero png's\\BelicaDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Hero png's\\Boris.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Hero png's\\CountessDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Hero png's\\GideonDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Hero png's\\GreystoneDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Hero png's\\KhaimeraDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Hero png's\\KwangDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Hero png's\\MurdockDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Hero png's\\MurielDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Hero png's\\NarbashDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Hero png's\\SevarogDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Hero png's\\Sparrow.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Hero png's\\SteelDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Hero png's\\TwinblastDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\hero-portraits\\default-boris.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\hero-portraits\\default-twinblast.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\hero-portraits\\T_CountessDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\hero-portraits\\T_GideonDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\hero-portraits\\T_GreystoneDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\hero-portraits\\T_KhaimeraDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\hero-portraits\\T_KwangDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\hero-portraits\\T_LtBelicaDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\hero-portraits\\T_MurdockDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\hero-portraits\\T_MurielDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\hero-portraits\\T_NarbashDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\hero-portraits\\T_SevarogBloodred_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\hero-portraits\\T_SevarogDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\hero-portraits\\T_SparrowDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\hero-portraits\\T_SteelDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Logos\\Fault Logo - Black.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Logos\\Fault Logo - White.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Logos\\SMS Logo - Black.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Logos\\SMS Logo - White.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Map Screenshots\\Core Dusk.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Map Screenshots\\Dusk Jungle.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Map Screenshots\\FaultBG.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Map Screenshots\\Jungle 1.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Map Screenshots\\Jungle 2.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\assets\\presskit\\Map Screenshots\\Murdock and Jungle.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\favicon.ico",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 1,
+                    "code": 21,
+                    "comment": 23,
+                    "filename": "public\\index.html"
+                },
+                {
+                    "filename": "public\\logo192.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public\\logo512.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 25,
+                    "comment": 0,
+                    "filename": "public\\manifest.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "public\\robots.txt"
+                },
+                {
+                    "blank": 31,
+                    "code": 37,
+                    "comment": 12,
+                    "filename": "README.md"
+                },
+                {
+                    "blank": 5,
+                    "code": 43,
+                    "comment": 0,
+                    "filename": "src\\App.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 38,
+                    "comment": 0,
+                    "filename": "src\\assets\\agenda.svg"
+                },
+                {
+                    "filename": "src\\assets\\details-abilities.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\details-aspects.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\details-compatibility.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\details-intro.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "src\\assets\\handyman-tools.svg"
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Banners\\Dawn Banner.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Banners\\Dusk Banner.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Banners\\OP BW Banner.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Banners\\OP Purple Banner.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Banners\\Red Buff Banner.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Hero Icons\\Boris\\t_Boris_AbilityIcon_E.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Hero Icons\\Boris\\t_Boris_AbilityIcon_LMB.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Hero Icons\\Boris\\t_Boris_AbilityIcon_P.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Hero Icons\\Boris\\t_Boris_AbilityIcon_Q.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Hero Icons\\Boris\\t_Boris_AbilityIcon_R.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Hero Icons\\Boris\\t_Boris_AbilityIcon_RMB.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Hero png's\\BelicaDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Hero png's\\Boris.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Hero png's\\CountessDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Hero png's\\GideonDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Hero png's\\GreystoneDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Hero png's\\KhaimeraDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Hero png's\\KwangDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Hero png's\\MurdockDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Hero png's\\MurielDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Hero png's\\NarbashDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Hero png's\\SevarogDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Hero png's\\Sparrow.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Hero png's\\SteelDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Hero png's\\TwinblastDefault.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\hero-portraits\\default-boris.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\hero-portraits\\default-gideon.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\hero-portraits\\default-greystone.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\hero-portraits\\default-muriel.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\hero-portraits\\default-twinblast.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\hero-portraits\\T_CountessDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\hero-portraits\\T_KhaimeraDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\hero-portraits\\T_KwangDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\hero-portraits\\T_LtBelicaDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\hero-portraits\\T_MurdockDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\hero-portraits\\T_NarbashDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\hero-portraits\\T_SevarogBloodred_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\hero-portraits\\T_SevarogDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\hero-portraits\\T_SparrowDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\hero-portraits\\T_SteelDefault_Portrait.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Logos\\Fault Logo - Black.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Logos\\Fault Logo - White.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Logos\\SMS Logo - Black.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Logos\\SMS Logo - White.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Map Screenshots\\Core Dusk.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Map Screenshots\\Dusk Jungle.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Map Screenshots\\FaultBG.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Map Screenshots\\Jungle 1.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Map Screenshots\\Jungle 2.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\presskit\\Map Screenshots\\Murdock and Jungle.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\assets\\step1.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 2,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "src\\components\\BrowsePage.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "src\\components\\Create.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 127,
+                    "comment": 2,
+                    "filename": "src\\components\\CreateViews\\CategoryView.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "src\\components\\CreateViews\\CreateGrid.js"
+                },
+                {
+                    "blank": 24,
+                    "code": 170,
+                    "comment": 1,
+                    "filename": "src\\components\\CreateViews\\CreateView.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "src\\components\\CreateViews\\Details\\Abilities\\Abilities.js"
+                },
+                {
+                    "blank": 10,
+                    "code": 55,
+                    "comment": 0,
+                    "filename": "src\\components\\CreateViews\\Details\\Abilities\\AbilitiesGrid.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 127,
+                    "comment": 2,
+                    "filename": "src\\components\\CreateViews\\Details\\Abilities\\AbilitiesStep.js"
+                },
+                {
+                    "blank": 13,
+                    "code": 139,
+                    "comment": 1,
+                    "filename": "src\\components\\CreateViews\\Details\\Abilities\\AbilitiesView.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "src\\components\\CreateViews\\Details\\Aspects\\Aspects.js"
+                },
+                {
+                    "blank": 10,
+                    "code": 55,
+                    "comment": 0,
+                    "filename": "src\\components\\CreateViews\\Details\\Aspects\\AspectsGrid.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 127,
+                    "comment": 2,
+                    "filename": "src\\components\\CreateViews\\Details\\Aspects\\AspectsSteps.js"
+                },
+                {
+                    "blank": 16,
+                    "code": 135,
+                    "comment": 1,
+                    "filename": "src\\components\\CreateViews\\Details\\Aspects\\AspectsView.js"
+                },
+                {
+                    "blank": 26,
+                    "code": 241,
+                    "comment": 1,
+                    "filename": "src\\components\\CreateViews\\Details\\Aspects\\components\\AddSet.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 42,
+                    "comment": 0,
+                    "filename": "src\\components\\CreateViews\\Details\\Aspects\\components\\AspectImg.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 108,
+                    "comment": 0,
+                    "filename": "src\\components\\CreateViews\\Details\\Aspects\\components\\Set.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "src\\components\\CreateViews\\Details\\Compatibility\\Compatibility.js"
+                },
+                {
+                    "blank": 10,
+                    "code": 55,
+                    "comment": 0,
+                    "filename": "src\\components\\CreateViews\\Details\\Compatibility\\CompatibilityGrid.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 127,
+                    "comment": 2,
+                    "filename": "src\\components\\CreateViews\\Details\\Compatibility\\CompatibilitySteps.js"
+                },
+                {
+                    "blank": 13,
+                    "code": 145,
+                    "comment": 1,
+                    "filename": "src\\components\\CreateViews\\Details\\Compatibility\\CompatibilityView.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 24,
+                    "comment": 0,
+                    "filename": "src\\components\\CreateViews\\Details\\Compatibility\\DragDrop\\Board.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 22,
+                    "comment": 0,
+                    "filename": "src\\components\\CreateViews\\Details\\Compatibility\\DragDrop\\Card.js"
+                },
+                {
+                    "blank": 11,
+                    "code": 105,
+                    "comment": 0,
+                    "filename": "src\\components\\CreateViews\\Details\\Compatibility\\HeroDragDrop\\HeroDragDrop.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "src\\components\\CreateViews\\Details\\Details.js"
+                },
+                {
+                    "blank": 10,
+                    "code": 55,
+                    "comment": 0,
+                    "filename": "src\\components\\CreateViews\\Details\\DetailsGrid.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 127,
+                    "comment": 2,
+                    "filename": "src\\components\\CreateViews\\Details\\DetailsSteps.js"
+                },
+                {
+                    "blank": 34,
+                    "code": 321,
+                    "comment": 1,
+                    "filename": "src\\components\\CreateViews\\Details\\DetailsView.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 58,
+                    "comment": 0,
+                    "filename": "src\\components\\CreateViews\\HeroSelect\\HeroSelect.js"
+                },
+                {
+                    "blank": 10,
+                    "code": 55,
+                    "comment": 0,
+                    "filename": "src\\components\\CreateViews\\HeroSelect\\HeroSelectGrid.js"
+                },
+                {
+                    "blank": 30,
+                    "code": 269,
+                    "comment": 1,
+                    "filename": "src\\components\\CreateViews\\HeroSelect\\HeroSelectView.js"
+                },
+                {
+                    "blank": 14,
+                    "code": 33,
+                    "comment": 0,
+                    "filename": "src\\components\\CreateViews\\printHeroName.js"
+                },
+                {
+                    "blank": 15,
+                    "code": 144,
+                    "comment": 0,
+                    "filename": "src\\components\\CreateViews\\Setup\\Title.js"
+                },
+                {
+                    "blank": 8,
+                    "code": 56,
+                    "comment": 0,
+                    "filename": "src\\components\\Customize.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 133,
+                    "comment": 2,
+                    "filename": "src\\components\\CustomizeViews\\CustomizeCatView.js"
+                },
+                {
+                    "blank": 8,
+                    "code": 60,
+                    "comment": 0,
+                    "filename": "src\\components\\CustomizeViews\\CustomizeGrid.js"
+                },
+                {
+                    "blank": 15,
+                    "code": 145,
+                    "comment": 1,
+                    "filename": "src\\components\\CustomizeViews\\CustomizeView.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 156,
+                    "comment": 0,
+                    "filename": "src\\components\\Display\\DisplayBuild.js"
+                },
+                {
+                    "blank": 11,
+                    "code": 160,
+                    "comment": 1,
+                    "filename": "src\\components\\Display\\DisplayCardBuild.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 182,
+                    "comment": 0,
+                    "filename": "src\\components\\Display\\DisplayListBuild.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 99,
+                    "comment": 0,
+                    "filename": "src\\components\\Hero\\HeroList.js"
+                },
+                {
+                    "blank": 8,
+                    "code": 48,
+                    "comment": 0,
+                    "filename": "src\\components\\HeroGrid.js"
+                },
+                {
+                    "blank": 20,
+                    "code": 215,
+                    "comment": 1,
+                    "filename": "src\\components\\HeroPage\\HeroPage.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "src\\components\\HeroPage\\SidePanel.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 54,
+                    "comment": 0,
+                    "filename": "src\\components\\Home.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 72,
+                    "comment": 0,
+                    "filename": "src\\components\\HomeGrid.js"
+                },
+                {
+                    "blank": 16,
+                    "code": 40,
+                    "comment": 0,
+                    "filename": "src\\components\\HomeSections\\ProCarousel.js"
+                },
+                {
+                    "blank": 14,
+                    "code": 40,
+                    "comment": 0,
+                    "filename": "src\\components\\HomeSections\\TrendingCardSection.js"
+                },
+                {
+                    "blank": 13,
+                    "code": 214,
+                    "comment": 1,
+                    "filename": "src\\components\\Navbar.js"
+                },
+                {
+                    "blank": 8,
+                    "code": 56,
+                    "comment": 0,
+                    "filename": "src\\components\\Review.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 133,
+                    "comment": 2,
+                    "filename": "src\\components\\ReviewViews\\ReviewCatView.js"
+                },
+                {
+                    "blank": 8,
+                    "code": 60,
+                    "comment": 0,
+                    "filename": "src\\components\\ReviewViews\\ReviewGrid.js"
+                },
+                {
+                    "blank": 15,
+                    "code": 143,
+                    "comment": 1,
+                    "filename": "src\\components\\ReviewViews\\ReviewView.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 201,
+                    "comment": 0,
+                    "filename": "src\\components\\StoredBuilds.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 23,
+                    "comment": 0,
+                    "filename": "src\\components\\Users\\UserList.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "src\\constants.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 14,
+                    "comment": 3,
+                    "filename": "src\\fire.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 25,
+                    "comment": 3,
+                    "filename": "src\\index.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 19,
+                    "comment": 0,
+                    "filename": "src\\logo.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 148,
+                    "comment": 0,
+                    "filename": "src\\mockData.js"
+                },
+                {
+                    "blank": 15,
+                    "code": 95,
+                    "comment": 31,
+                    "filename": "src\\serviceWorker.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 4,
+                    "filename": "src\\setupTests.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "src\\Signin\\Hero.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 39,
+                    "comment": 0,
+                    "filename": "src\\Signin\\Login.js"
+                },
+                {
+                    "blank": 11,
+                    "code": 94,
+                    "comment": 0,
+                    "filename": "src\\Signin\\Signin.js"
+                },
+                {
+                    "blank": 14,
+                    "code": 104,
+                    "comment": 0,
+                    "filename": "src\\Signin\\style.css"
+                },
+                {
+                    "blank": 0,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "src\\styles\\index.css"
+                },
+                {
+                    "blank": 5,
+                    "code": 25,
+                    "comment": 0,
+                    "filename": "src\\styles\\Navbar.css"
+                }
+            ]
+        }
+    ]
+}
