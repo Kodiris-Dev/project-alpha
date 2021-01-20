@@ -14,6 +14,8 @@ var faultBlue = '#7DBCC9';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    padding: 40,
+    paddingBottom: 0,
   },
   paper: {
     padding: theme.spacing(3),
@@ -21,9 +23,9 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: 50,
     textAlign: 'center',
     color: theme.palette.text.secondary,
-    height: '800px',
     backgroundColor: 'transparent',
     color: 'white',
+    height: '100%',
   },
   title: {
     border: '1px solid red',
@@ -52,16 +54,12 @@ export default function CreateGrid() {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={0}>
-        <Grid item xs={12} sm={8} md={9}>
-          <Paper className={classes.paper}>
-            <CreateView/>
-            </Paper>
-        </Grid>
-        <Grid item xs={12} sm={4} md={3}>
+      <Grid container spacing={0} >
+        <Grid item xs={12} style={{height: '100%'}}>
           <Paper className={classes.paper}>
             <CategoryView />
-          </Paper>
+            <CreateView/>
+            </Paper>
         </Grid>
       </Grid>
     </div>
